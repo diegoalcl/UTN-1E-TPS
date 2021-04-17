@@ -44,97 +44,162 @@ int main(void)
 	int ingresoPrimero;
 	int ingresoSegundo;
 	int operacionesResueltas;
+	int metioUnCero;
+	int factoreoCero1;
+	int factoreoCero2;
 
-	printf("Bienvenid@ a la calculadora no oficial de la UTN. Ingrese el número correspondiente al item que desea.\n1.Ingresar o cambiar el primer valor.\n2.Ingresar o cambiar el segundo valor.\n3.Realizar las funciones de suma, resta, división, multiplicación y factoreo.\n4.Ver los resultados de esas funciones.\n5.Cerrar la calculadora.");
+	ingresoPrimero=0;
+	ingresoSegundo=0;
+	metioUnCero=0;
+	factoreoCero1=0;
+	factoreoCero2=0;
+
+	printf("Bienvenid@ a la calculadora no oficial de la UTN. Ingrese el número correspondiente al item que desea.");
+	printf("\n1.Ingresar o cambiar el primer operando.\n2.Ingresar o cambiar el segundo operando.");
+	printf("\n3.Realizar las funciones de suma, resta, división, multiplicación y factoreo.");
+	printf("\n4.Ver los resultados de esas funciones.\n5.Cerrar la calculadora.");
+	//puse las opciones en varios printf para que no haya una linea enorme
 	scanf("%d", & opcion);
 
-	while(opcion!=7)
+	while(opcion!=999)
 	{
-		switch (opcion)
+		if(opcion>=1 && opcion<=6)//if para que no se metan opciones invalidas, el 6 es un "reset secreto"
 		{
-			case 1:
-				printf("Ingrese el primer operando:");
-				scanf("%d", & operando1);
-				printf("1.Cambiar el valor del primer operando.\n2.Ingresar o cambiar el segundo operando.\n3.Realizar las funciones de suma, resta, división, multiplicación y factoreo.\n4.Ver los resultados de esas funciones.\n5.Cerrar la calculadora.");
-				scanf("%d", & opcion);
-				ingresoPrimero=1;
-				break;
-			case 2:
-				printf("Ingrese el segundo operando:");
-				scanf("%d", & operando2);
-				printf("1.Ingresar o cambiar el valor del primer operando.\n2.Cambiar el segundo operando.\n3.Realizar las funciones de suma, resta, división, multiplicación y factoreo.\n4.Ver los resultados de esas funciones.\n5.Cerrar la calculadora.");
-				scanf("%d", & opcion);
-				ingresoSegundo=1;
-				break;
-			case 3:
-				if(ingresoPrimero!=1 || ingresoSegundo!=1)
-				{
-					if(ingresoPrimero!=1)
+			switch (opcion)//desarrollo de las opciones 1 a 6 del menu
+			{
+				case 1:
+					printf("Ingrese el primer operando:");
+					scanf("%d", & operando1);
+					ingresoPrimero=1;
+					if(ingresoPrimero==1)
 					{
-						printf("Error. No asigno un valor al operando 1.\n");
-						opcion=1;
+						printf("1.Cambiar el valor del primer operando.(Valor actual=%d).", operando1);
+					}else{
+						printf("1.Ingrese el valor del primer operando(Actualmente no hay valor asignado).");
 					}
-					else
+					if(ingresoSegundo==1)
 					{
-						printf("Error. No asigno un valor al operando 2.\n");
-						opcion=2;
+						printf("\n2.Ingresar o cambiar el segundo operando.(Valor actual=%d).", operando2);
+					}else{
+						printf("\n2.Ingresar o cambiar el segundo operando.(Actualmente no hay valor asignado).");
 					}
-				}else{
-					operacionesResueltas=1;
-					printf("Sus valores elegidos fueron %d y %d, realizando operaciones...\n", operando1, operando2);
-					resultadoSuma=suma(operando1,operando2);
-					resultadoResta=resta(operando1,operando2);
-					resultadoDivision=division(operando1,operando2);
-					resultadoMultiplicacion=multiplicacion(operando1,operando2);
-					resultadoFactoreo1=factorial(operando1);
-					resultadoFactoreo2=factorial(operando2);
-					printf("¡Operaciones hechas!.Ingrese 4 para ver los resultados:");
+					printf("\n3.Realizar las funciones de suma, resta, división, multiplicación y factoreo.");
+					printf("\n4.Ver los resultados de esas funciones.\n5.Cerrar la calculadora.");
 					scanf("%d", & opcion);
-					}
-				break;
-			case 4:
-				if(ingresoPrimero!=1 || ingresoSegundo!=1)
-				{
-					if(ingresoPrimero!=1)
+					break;
+				case 2:
+					printf("Ingrese el segundo operando:");
+					scanf("%d", & operando2);
+					ingresoSegundo=1;
+					if(ingresoPrimero==1)
 					{
-						printf("Error. No asigno un valor al operando 1.");
-						opcion=1;
+						printf("1.Ingresar o cambiar el segundo operando.(Valor actual=%d).", operando1);
 					}
-					else
+					else{
+						printf("1.Ingresar o cambiar el segundo operando.(Actualmente no hay valor asignado).");
+					}
+					if(ingresoSegundo==1)
 					{
-						printf("Error. No asigno un valor al operando 2.");
-						opcion=2;
+						printf("\n2.Cambiar el segundo operando.(Valor actual=%d).", operando2);
+					}else{
+						printf("\n2.Ingrese el valor del segundo perando(Actualmente no hay valor asignado).");
 					}
-				}else{
+					printf("\n3.Realizar las funciones de suma, resta, división, multiplicación y factoreo.");
+					printf("\n4.Ver los resultados de esas funciones.\n5.Cerrar la calculadora.");
+					scanf("%d", & opcion);
+					break;
+				case 3:
+					if(!ingresoPrimero || !ingresoSegundo)
+					{
+						if(!ingresoPrimero)
+						{
+							printf("Error. No asigno un valor al operando 1.\n");
+							opcion=1;
+						}
+						else
+						{
+							printf("Error. No asigno un valor al operando 2.\n");
+							opcion=2;
+						}
+					}else{
+						operacionesResueltas=1;
+						printf("Sus valores elegidos fueron %d y %d, realizando operaciones...\n", operando1, operando2);
+						resultadoSuma=suma(operando1,operando2);
+						resultadoResta=resta(operando1,operando2);
+						if(operando1!=0 && operando2!=0)
+						{
+							metioUnCero=1;
+							resultadoDivision=division(operando1,operando2);
+						}
+						resultadoMultiplicacion=multiplicacion(operando1,operando2);
+						if(operando1!=0)
+						{
+							resultadoFactoreo1=factorial(operando1);
+						}else{
+							factoreoCero1=1;
+						}
+						if(operando2!=0)
+						{
+						resultadoFactoreo2=factorial(operando2);
+						}else{
+							factoreoCero2=1;
+						}
+						printf("¡Operaciones hechas!.Ingrese 4 para ver los resultados:");
+						scanf("%d", & opcion);
+						}
+					break;
+				case 4:
 					if(operacionesResueltas==1)
 					{
 						printf("Sus valores elegidos fueron %d y %d.\n", operando1, operando2);
 						printf("El resultado de %d sumado a %d es: %d.", operando1, operando2, resultadoSuma);
 						printf("\nEl resultado de %d menos %d es: %d.", operando1, operando2, resultadoResta);
-						printf("\nEl resultado de %d dividido %d es: %.2f.", operando1, operando2, resultadoDivision);
-						printf("\nEl resultado de %d multiplicado %d es: %d.", operando1, operando2, resultadoMultiplicacion);
-						printf("\nEl factorial de %d es %d y ", operando1, resultadoFactoreo1);
-						printf("el factorial de %d es %d.", operando2, resultadoFactoreo2);
+
+						if(metioUnCero==1)
+						{
+							printf("\nEl resultado de %d dividido %d es: %.2f.", operando1, operando2, resultadoDivision);
+						}else{
+							printf("\nNo se puede dividir con un 0.");
+						}
+							printf("\nEl resultado de %d multiplicado %d es: %d.", operando1, operando2, resultadoMultiplicacion);
+						if(factoreoCero1==0)
+						{
+							printf("\nEl factorial de %d es %d y ", operando1, resultadoFactoreo1);
+						}else{
+							printf("\nEl factorial de 0 es 1 y ");
+						}
+						if(factoreoCero2==0)
+						{
+							printf("el factorial de %d es %d.", operando2, resultadoFactoreo2);
+						}else{
+							printf("el factorial de 0 es 1.");
+						}
 						opcion=6;
 					}else{
 						printf("Error. Primero ingrese 3 para resolver las operaciones:");
 						scanf("%d", &opcion);
 					}
-				}
-				break;
-			case 5:
-				printf("Ha cerrado la calculadora exitosamente.");
-				opcion=7;
-				break;
-			case 6:
-				ingresoPrimero=0;
-				ingresoSegundo=0;
-				operacionesResueltas=0;
-				printf("\nPara seguir realizando operaciones ingrese 1, para cerrar la calculadora ingrese 5:");
-				scanf("%d", & opcion);
-				break;
-
-		}//termina el switch
+					break;
+				case 5:
+					printf("Ha cerrado la calculadora exitosamente.");
+					opcion=999;
+					break;
+				case 6:
+					ingresoPrimero=0;
+					ingresoSegundo=0;
+					operacionesResueltas=0;
+					metioUnCero=0;
+					factoreoCero1=0;
+					factoreoCero2=0;
+					printf("\nPara seguir realizando operaciones ingrese 1, para cerrar la calculadora ingrese 5:");
+					scanf("%d", & opcion);
+					break;
+			}//termina el switch
+		//se cierra el if y se abre un else para asegurarse que no se metan opciones invalidas
+		}else{
+			printf("Error. Ingrese una opción entre 1 y 5:");
+			scanf("%d", & opcion);
+		}
 	}//termina el while
 	return EXIT_SUCCESS;
 }
