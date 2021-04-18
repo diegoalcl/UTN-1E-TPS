@@ -47,12 +47,16 @@ int main(void)
 	int metioUnCero;
 	int factoreoCero1;
 	int factoreoCero2;
+	int factoreoNegativo1;
+	int factoreoNegativo2;
 
 	ingresoPrimero=0;
 	ingresoSegundo=0;
 	metioUnCero=0;
 	factoreoCero1=0;
 	factoreoCero2=0;
+	factoreoNegativo1=0;
+	factoreoNegativo2=0;
 
 	printf("Bienvenid@ a la calculadora no oficial de la UTN. Ingrese el número correspondiente al item que desea.");
 	printf("\n1.Ingresar o cambiar el primer operando.\n2.Ingresar o cambiar el segundo operando.");
@@ -126,23 +130,33 @@ int main(void)
 						printf("Sus valores elegidos fueron %d y %d, realizando operaciones...\n", operando1, operando2);
 						resultadoSuma=suma(operando1,operando2);
 						resultadoResta=resta(operando1,operando2);
-						if(operando1!=0 && operando2!=0)
+						if(operando2!=0)
 						{
 							metioUnCero=1;
 							resultadoDivision=division(operando1,operando2);
 						}
 						resultadoMultiplicacion=multiplicacion(operando1,operando2);
-						if(operando1!=0)
+						if(operando1>0)
 						{
 							resultadoFactoreo1=factorial(operando1);
 						}else{
-							factoreoCero1=1;
+							if(operando1==0)
+							{
+								factoreoCero1=1;
+							}else{
+								factoreoNegativo1=1;
+							}
 						}
-						if(operando2!=0)
+						if(operando2>0)
 						{
 						resultadoFactoreo2=factorial(operando2);
 						}else{
-							factoreoCero2=1;
+							if(operando2==0)
+							{
+								factoreoCero2=1;
+							}else{
+								factoreoNegativo2=1;
+							}
 						}
 						printf("¡Operaciones hechas!.Ingrese 4 para ver los resultados:");
 						scanf("%d", & opcion);
@@ -162,17 +176,28 @@ int main(void)
 							printf("\nNo se puede dividir con un 0.");
 						}
 							printf("\nEl resultado de %d multiplicado %d es: %d.", operando1, operando2, resultadoMultiplicacion);
-						if(factoreoCero1==0)
+						if(factoreoNegativo1==1)
 						{
-							printf("\nEl factorial de %d es %d y ", operando1, resultadoFactoreo1);
+							printf("\n%d es negativo y no se puede factorear y ", operando1);
 						}else{
-							printf("\nEl factorial de 0 es 1 y ");
+							if(factoreoCero1==0)
+							{
+								printf("\nEl factorial de %d es %d y ", operando1, resultadoFactoreo1);
+							}else
+							{
+								printf("\nEl factorial de 0 es 1 y ");
+							}
 						}
-						if(factoreoCero2==0)
+						if(factoreoNegativo2==1)
 						{
-							printf("el factorial de %d es %d.", operando2, resultadoFactoreo2);
+							printf("%d es negativo y no se puede factorear.", operando2);
 						}else{
-							printf("el factorial de 0 es 1.");
+							if(factoreoCero2==0)
+							{
+								printf("el factorial de %d es %d.", operando2, resultadoFactoreo2);
+							}else{
+								printf("el factorial de 0 es 1.");
+							}
 						}
 						opcion=6;
 					}else{
@@ -191,6 +216,8 @@ int main(void)
 					metioUnCero=0;
 					factoreoCero1=0;
 					factoreoCero2=0;
+					factoreoNegativo1=0;
+					factoreoNegativo2=0;
 					printf("\nPara seguir realizando operaciones ingrese 1, para cerrar la calculadora ingrese 5:");
 					scanf("%d", & opcion);
 					break;
