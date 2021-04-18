@@ -173,7 +173,7 @@ int main(void)
 						{
 							printf("\nEl resultado de %d dividido %d es: %.2f.", operando1, operando2, resultadoDivision);
 						}else{
-							printf("\nNo se puede dividir con un 0.");
+							printf("\nNo se puede dividir por 0.");
 						}
 							printf("\nEl resultado de %d multiplicado %d es: %d.", operando1, operando2, resultadoMultiplicacion);
 						if(factoreoNegativo1==1)
