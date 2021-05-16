@@ -17,7 +17,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "ArrayEmployees.h"
-#define MAX 10
+#define MAX 1000
 
 int main(void)
 {
@@ -114,7 +114,7 @@ int main(void)
 		fflush(stdin);
 		printf("¿Desea seguir usando el programa?s/n");
 		scanf("%c", &respuesta);
-		}while(respuesta=='s');
+		}while(respuesta=='s');//se termina el do while
 	}
 
 	return EXIT_SUCCESS;
