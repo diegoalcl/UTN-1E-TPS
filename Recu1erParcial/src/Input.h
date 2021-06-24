@@ -45,4 +45,11 @@ int verificarAnio(int numero);
  */
 
 int verificarIdServicio(int numero);
+
+/**
+ * \brief Verifica que se elija un servicio valido
+ *\param Recibe un char
+ *\param Devuelve el servicio elegido
+ */
+char verificarServicio(char* eleccionServicio);
 #endif /* INPUT_H_ */

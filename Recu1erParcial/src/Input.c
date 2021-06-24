@@ -113,3 +113,17 @@ int verificarIdServicio(int numero)
 
 }
 
+char verificarServicio(char* eleccionServicio)
+{
+    char servicio;
+    fflush(stdin);
+    scanf("%c", &servicio);
+    while(servicio!='L' && servicio!='P' && servicio!='C' && servicio!='K' && servicio!='l' && servicio!='p' && servicio!='c' && servicio!='k')
+    {
+        printf("\nError. L para limpieza, P para parche, C para centrado y K para cadena.\n");
+        fflush(stdin);
+        scanf("%c", &servicio);
+    }
+    return servicio;
+}
+

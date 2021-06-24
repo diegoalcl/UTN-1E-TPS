@@ -16,6 +16,7 @@ void altaTrabajo(Trabajo* arrayTrabajos, int* idTrabajos, int* idServicio)
 	int auxAnio=0;
 	int auxId=0;
 	int cargaOk=0;
+	char servicio;
 
 	Servicio auxiliarServicio;
 
@@ -51,6 +52,9 @@ void altaTrabajo(Trabajo* arrayTrabajos, int* idTrabajos, int* idServicio)
 					printf("\nError. No se encontró ID de servicio.");
 				}else{
 					printf("\nEl id correspondiente a su trabajo es %d.\n", auxIdServicio);
+					printf("\n¿Que servicio desea realizarle?L para limpieza, P para parche, C para centrado y K para cadena:");
+					scanf("%c", &servicio);
+					altaServicios(servicio, auxIdServicio);
 					printf("\nIngrese en formato de número entero el día:");
 					fflush(stdin);
 					scanf("%d", &auxDia);

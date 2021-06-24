@@ -17,6 +17,10 @@ int main(void)
 	int idAModificar=0;
 	int banderaTrabajos=0;
 	int idADarDeBaja=0;
+	int serviciosLimpieza;
+	int serviciosParche;
+	int serviciosCentrado;
+	int serviciosCadena;
 
 	Trabajo arrayTrabajos[MAX_ARRAY];
 	//Servicio arrayServicios[MAX_ARRAY];
@@ -88,11 +92,7 @@ int main(void)
 			//listar servicios
 			if(banderaTrabajos==1)
 			{
-				printf("\n-----En construcción-----\n");
-			//	if(listarServicios)
-			//	{
-			//
-			//	}
+				listarServicios(serviciosLimpieza,serviciosParche,serviciosCentrado,serviciosCadena);
 			}else{
 				printf("Error. Aún no se han prestado servicios.");
 			}
