@@ -158,7 +158,7 @@ void showOneEmployee(Employee sEmployee){
     printf("%03d", sEmployee.id);
     printf("%12s", sEmployee.name);
     printf("%18s", sEmployee.lastName);
-    printf("%22$.2f", sEmployee.salary);
+    printf("%22.2f", sEmployee.salary);
     printf("%23d\n", sEmployee.sector);
 }
 int addEmployee(Employee* list, int len, int id, char name[],char lastName[],float salary,int sector){
