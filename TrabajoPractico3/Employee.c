@@ -410,19 +410,22 @@ int compareBySalary(void* pElementOne, void* pElementTwo)
 
 int compareByName(void* pElementOne, void* pElementTwo)
 {
-    int retorno;
-    char nombre_Uno[50];
-    char nombre_Dos[50];
+	int retorno=0;
+	char auxiliarNombreA[130];
+	char auxiliarNombreB[130];
 
-    Employee* empleado_Uno = (Employee*) pElementOne;
-    Employee* empleado_Dos = (Employee*) pElementTwo;
-
-    employee_getNombre(empleado_Uno, nombre_Uno);
-    employee_getNombre(empleado_Dos, nombre_Dos);
-
-    retorno = strcmp(nombre_Uno, nombre_Dos);
-
-    return retorno;
+		if(pElementOne!=NULL && pElementTwo!=NULL){
+			if(     employee_getNombre(pElementOne, auxiliarNombreA)==0 &&
+					employee_getNombre(pElementTwo, auxiliarNombreB)==0){
+				if(strcmp (auxiliarNombreA , auxiliarNombreB) > 0 ){
+					retorno=1;
+				}
+				if(strcmp (auxiliarNombreA , auxiliarNombreB) < 0 ){
+					retorno=-1;
+				}
+			}
+		}
+		return retorno;
 }
 
 int compareByHoursWorked(void* pElementOne, void* pElementTwo)

@@ -28,6 +28,7 @@ int main()
     int option = 0;
     int id =0;
     int casosPosiblesDeRetorno=0;//en base a lo que devuelva cada funcion se muestra un mensaje distinto
+    int banderaListaCargada=0;
 
     LinkedList* listaEmpleados = ll_newLinkedList();
 
@@ -46,6 +47,7 @@ int main()
 	                break;
 	            case 0:
 	                printf("Se ha abierto el archivo exitosamente.\n");
+	                banderaListaCargada=1;
 	                break;
 	            case 1:
 	                printf("Error: el archivo no pudo ser cargado en modo texto.\n");
@@ -66,6 +68,7 @@ int main()
                     break;
                 case 0:
                     printf("Se ha abierto el archivo exitosamente.\n");
+                    banderaListaCargada=1;
                     break;
                 case 1:
                     printf("Error: no pudo ser cargado en modo binario.\n");
@@ -78,22 +81,28 @@ int main()
                 system("pause");
                 break;
             case 3:
-            	casosPosiblesDeRetorno=controller_addEmployee(listaEmpleados, &id);
-                switch(casosPosiblesDeRetorno)
-                {
-                case -1:
-                    printf("Error: no se puede agregar el empleado a la lista.\n");
-                    break;
-                case 0:
-                    printf("El empleado fue agregado exitosamente.\n");
-                    break;
-                case 1:
-                    printf("Error: no se puede dar el alta.\n");
-                    break;
-                case 2:
-                    printf("Acción cancelada.\n");
-                    break;
-                }
+            	if(banderaListaCargada==1)
+            	{
+					id=getNextId(listaEmpleados);
+					casosPosiblesDeRetorno=controller_addEmployee(listaEmpleados, &id);
+					switch(casosPosiblesDeRetorno)
+					{
+					case -1:
+						printf("Error: no se puede agregar el empleado a la lista.\n");
+						break;
+					case 0:
+						printf("El empleado fue agregado exitosamente.\n");
+						break;
+					case 1:
+						printf("Error: no se puede dar el alta.\n");
+						break;
+					case 2:
+						printf("Acción cancelada.\n");
+						break;
+					}
+            	}else{
+            		printf("Error. No hay una lista a la cual agregar empleados.");
+            	}
                 printf("\n");
                 system("pause");
                 break;

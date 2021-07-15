@@ -68,61 +68,7 @@ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
         }
         retorno = 0;
     }
-    return retorno;
-    /*int id;
-    int workHours;
-    int salary;
-    int counter = 0;
-    char buffer[4][128];
-    Employee* aux;
 
-    if(pFile != NULL && pArrayListEmployee != NULL)
-    {
-        while(!feof(pFile))
-        {
-            if(fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n", buffer[0], buffer[1], buffer[2], buffer[3]) == 4
-               && inputs_stringToInteger(buffer[0], &id) && buffer[1] != NULL
-               && inputs_stringToInteger(buffer[2], &workHours)
-               && inputs_stringToInteger(buffer[3], &salary))
-            {
-                aux = employee_newWithParameters(&id, buffer[1], &workHours, &salary);
-
-                if(aux != NULL
-                   && ll_len(pArrayListEmployee) < EMPLOYEE_MAX
-                   && ll_add(pArrayListEmployee, (Employee*)aux) == 0)
-                {
-                    counter++;
-                }
-            }
-        }
-    }
-
-    return counter; */
-    /*int retorno = -1;
-    int contador = 0;
-    Employee* this = NULL;
-    if(pArrayListEmployee != NULL && pFile != NULL)
-    {
-        while(!feof(pFile))
-        {
-            this = employee_new();
-            if(this != NULL)
-            {
-                fread(this, sizeof(Employee), 1, pFile);
-                if(feof(pFile))
-                {
-                    retorno = -1;
-                    break;
-                }
-                ll_add(pArrayListEmployee, this);
-                contador++;
-            }
-        }
-        fclose(pFile);
-        printf("Se cargaron : %d.\n", contador);
-        pFile = NULL;
-        retorno = 0;
-    }*/
     return retorno;
 }
 

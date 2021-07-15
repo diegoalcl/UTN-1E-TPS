@@ -3,6 +3,8 @@
 #include <string.h>
 #include "LinkedList.h"
 #include "Employee.h"
+#include "Controller.h"
+#include "parser.h"
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
  *
  * \param path char*
@@ -161,8 +163,16 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
                system("pause");
                do
                {
-                  system("cls");
-                  opcion = getInt("Ingrese una opcion:\n1. Cambiar nombre.\n2. Cambiar cantidad de horas trabajadas.\n3. Cambiar salario.\n4. Salir al menu principal.\n");
+                  fflush(stdin);
+                  printf("Ingrese una opcion:\n1. Cambiar nombre.\n2. Cambiar cantidad de horas trabajadas.\n3. Cambiar salario.\n4. Salir al menu principal.\n");
+                  scanf("%d", &opcion);
+                  while(opcion!=1 && opcion!=2 && opcion!=3 && opcion!=4)
+                  {
+                	  printf("Error.\n");
+                      printf("Ingrese una opcion:\n1. Cambiar nombre.\n2. Cambiar cantidad de horas trabajadas.\n3. Cambiar salario.\n4. Salir al menu principal.\n");
+                	  fflush(stdin);
+                      scanf("%d", &opcion);
+                  }
                   switch(opcion)
                   {
                   case 1:
@@ -249,7 +259,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
             id = getInt("\nIngrese el id del empleado que desea dar de baja: ");
             printf("\n");
 
-            auxEmpleado = getEmployeeById(pArrayListEmployee, id);
+            auxEmpleado=getEmployeeById(pArrayListEmployee, id);
 
             if(auxEmpleado != NULL)
             {
