@@ -35,6 +35,7 @@ void menu()
 			case 1:
 				do{
 					printf("\nIngrese la cantidad de kilómetros:");
+					fflush(stdin);
 					scanf("%f", &km);
 					if(km>0)
 					{
@@ -50,6 +51,7 @@ void menu()
 				{
 					do{
 						printf("\nIngrese el precio del vuelo de Aerolíneas:");
+						fflush(stdin);
 						scanf("%f", &precioAerolineas);
 						if(precioAerolineas>0)
 						{
@@ -60,6 +62,7 @@ void menu()
 					}while(precioAerolineas<=0);
 					do{
 						printf("\nIngrese el precio del vuelo de Latam:");
+						fflush(stdin);
 						scanf("%f", &precioLatam);
 						if(precioLatam>0){
 						printf("El precio ingresado de Latam es $%.2f.", precioLatam);
@@ -75,7 +78,7 @@ void menu()
 			case 3:
 				if(banderaKm==1 && banderaPrecios==1)
 				{
-					printf("Calculando costos...");
+					printf("Calculando costos...\n");
 					banderaCostosCalculados=1;
 					system("pause");
 					opcionRetornada=costoDebito(&precioAerolineasDebito, precioAerolineas, &precioLatamDebito, precioLatam);
