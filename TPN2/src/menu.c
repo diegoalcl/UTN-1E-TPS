@@ -98,7 +98,7 @@ void menu(Passenger list[],int tamanio)
 				}
 				printf("\n");
 				break;
-			case 5:
+			case 5://Hardcodeo=hecho
 				hardcodeoPasajeros(list);
 				seCargoUnPasajero = 1;
 				printf("Hardcodeo realizado.");
