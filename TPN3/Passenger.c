@@ -9,26 +9,6 @@
 
 #define MAX_NOMBRE 128
 
-static int isValidNombre(char* cadena,int longitud);
-
-static int isValidNombre(char* cadena,int longitud)
-{
-	int i=0;
-	int retorno = 1;
-
-	if(cadena != NULL && longitud > 0)
-	{
-		for(i=0 ; cadena[i] != '\0' && i < longitud; i++)
-		{
-			if((cadena[i] < 'A' || cadena[i] > 'Z' ) && (cadena[i] < 'a' || cadena[i] > 'z' ))
-			{
-				retorno = 0;
-				break;
-			}
-		}
-	}
-	return retorno;
-}
 
 Passenger* passenger_new()
 {
@@ -104,11 +84,9 @@ int passenger_setNombre(Passenger* this,char* nombre)
 	int retorno = -1;
 	if(this != NULL && nombre != NULL)
 	{
-		if(isValidNombre(nombre,MAX_NOMBRE))
-		{
-			retorno = 0;
-			strncpy(this->nombre,nombre,MAX_NOMBRE);
-		}
+		retorno = 0;
+		strcpy(this->nombre,nombre);
+
 	}
 	return retorno;
 }
@@ -234,7 +212,7 @@ int passenger_getEstadoVuelo(Passenger* this,char* estadoVuelo)
 
 //A partir de aca son funciones creadas a medida que las fui necesitando
 
-int getPassengerById(LinkedList* pArrayListPassenger, int id)
+/*int getPassengerById(LinkedList* pArrayListPassenger, int id)
 {
     int len;
     int i;
@@ -256,7 +234,7 @@ int getPassengerById(LinkedList* pArrayListPassenger, int id)
     }
     return retorno;
 
-}
+}*/
 
 int getBiggestId(LinkedList* pArrayListPassenger)
 {
@@ -406,13 +384,14 @@ void checkStringNumbers (char mensaje[], char cadena[])
     }
 }
 
-void pedirDatosPasajero(char* nombre, char* apellido, char* tipoPasajero, char* codigoVuelo, char* precio)
+void pedirDatosPasajero(char* nombre, char* apellido, char* tipoPasajero, char* codigoVuelo, char* precio, char* estadoVuelo)
 {
     checkString("Ingrese el nombre del pasajero: ", nombre);
     checkString("Ingrese el apellido del pasajero: ", apellido);
     checkStringNumbers("Ingrese el tipo de pasajero: ", tipoPasajero);
     checkString("Ingrese el código de vuelo: ", codigoVuelo);
     checkStringNumbers("Ingrese el precio del vuelo: ", precio);
+    checkString("Ingrese el estado del vuelo:", estadoVuelo);
 }
 
 char getYesOrNo(char mensaje[])

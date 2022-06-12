@@ -97,7 +97,7 @@ int controller_addPassenger(LinkedList* pArrayListPassenger, int* id)
 			 Passenger* nuevo_Pasajero;
 
 			 sprintf(idPasajero, "%d", *id);
-			 pedirDatosPasajero(nombre, apellido, tipoPasajero, codigoVuelo, precio);
+			 pedirDatosPasajero(nombre, apellido, tipoPasajero, codigoVuelo, precio, estadoVuelo);
 			 nuevo_Pasajero = passenger_newParametros(idPasajero, nombre, apellido, tipoPasajero, codigoVuelo, precio, estadoVuelo);
 			 printf("\n");
 

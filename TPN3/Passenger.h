@@ -102,15 +102,18 @@ void checkString (char mensaje[], char cadena[]);
  * retorna void
  */
 void checkStringNumbers (char mensaje[], char cadena[]);
-/** \brief Pide datos para un nuevo empleado
+/** \brief Pide datos para un nuevo pasajero
  *
- * \param nombre char* para el nombre del empleado
- * \param horasTrabajadas char* para la cantidad de horas trabajadas del empleado
- * \param salario char* para el salario del empleado
+ * \param nombre char* para el nombre del pasajero
+ * \param apellido char* para el nombre del pasajero
+ * \param tipoPasajero char* para el tipo de pasajero
+ * \param codigoVuelo char* para el codigo de vuelo
+ * \param precio char* para el precio del vuelo
+ * \param estadoVuelo char* para el estado del vuelo
  * \retorna void
  *
  */
-void pedirDatosPasajero(char* nombre, char* apellido, char* tipoPasajero, char* codigoVuelo, char* precio);
+void pedirDatosPasajero(char* nombre, char* apellido, char* tipoPasajero, char* codigoVuelo, char* precio, char* estadoVuelo);
 
 /** \brief Esta funcion pide un entero y lo devuelve
  *
@@ -145,10 +148,10 @@ int getDosEstados(char* mensaje, int primerEstado, int segundoEstado);
  */
 int compareById(void* pElementOne, void* pElementTwo);
 
-/** \brief Esta funcion establece un criterio de comparacion para ordenar a una lista de empleados por nombre
+/** \brief Esta funcion establece un criterio de comparacion para ordenar a una lista de pasajeros por nombre
  *
- * \param pElementOne void* El primer empleado a comparar
- * \param pElementTwo void* El segundo empleado a comparar
+ * \param pElementOne void* El primer pasajero a comparar
+ * \param pElementTwo void* El segundo pasajero a comparar
  * \return int Devuelve 1 si el primero es mayor al segundo, si son iguales devuelve 0
  *
  */
@@ -199,9 +202,31 @@ int compareByPrice(void* pElementOne, void* pElementTwo);
  */
 void passenger_delete(Passenger* this);
 
+/** \brief Esta funcion setea el estado del vuelo
+ *
+ * \param this Passenger* el libro
+ * \param estadoVuelo char* el estado del vuelo
+ * \return int Devuelve -1 si el puntero al libro es nulo, caso contrario devuelve 0
+ *
+ */
 int passenger_setEstadoVuelo(Passenger* this,char* estadoVuelo);
 
+/** \brief Esta funcion establece un criterio de comparacion para ordenar a una lista de pasajeros por el estado del vuelo
+ *
+ * \param pElementOne void* El primer pasajero a comparar
+ * \param pElementTwo void* El segundo pasajero a comparar
+ * \return int Devuelve 1 si el primero es mayor al segundo, si son iguales devuelve 0
+ *
+ */
 int compareByFlightStatus(void* pElementOne, void* pElementTwo);
 
-int getPassengerById(LinkedList* pArrayListPassenger, int id);
+/** \brief Esta funcion busca y trae a un pasajero por su id
+ *
+ * \param pArrayListPassenger LinkedList* la lista de pasajeros
+ * \param id int* el id del pasajero
+ * \return int Devuelve -1 si el puntero al libro o al id son nulos, caso contrario devuelve 0
+ *
+ */
+
+//int getPassengerById(LinkedList* pArrayListPassenger, int id); la reformule
 #endif /* PASSENGER_H_ */

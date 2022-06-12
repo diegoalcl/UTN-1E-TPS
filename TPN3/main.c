@@ -30,6 +30,7 @@ int main(void)
     int option = 0;
     int id =0;
     int casosPosiblesDeRetorno=0;
+    int banderaAlgoParaGuardar=0;
 
     LinkedList* listaPasajeros = ll_newLinkedList();
     do{
@@ -48,6 +49,7 @@ int main(void)
 	                break;
 	            case 0:
 	                printf("Se ha abierto el archivo exitosamente.\n");
+	                banderaAlgoParaGuardar=1;
 	                break;
 	            case 1:
 	                printf("Error: el archivo no pudo ser cargado en modo texto.\n");
@@ -67,6 +69,7 @@ int main(void)
                     break;
                 case 0:
                     printf("Se ha abierto el archivo exitosamente.\n");
+                    banderaAlgoParaGuardar=1;
                     break;
                 case 1:
                     printf("Error: no pudo ser cargado en modo binario.\n");
@@ -86,6 +89,7 @@ int main(void)
                     break;
                 case 0:
                     printf("El pasajero fue agregado exitosamente.\n");
+                    banderaAlgoParaGuardar=1;
                     break;
                 case 1:
                     printf("Error: no se puede dar el alta.\n");
@@ -182,34 +186,45 @@ int main(void)
                 printf("\n");
                 break;
             case 8:
-                casosPosiblesDeRetorno=controller_saveAsText("data.csv", listaPasajeros);
-                switch(casosPosiblesDeRetorno)
-                {
-                case -1:
-                    printf("Error: no se ha podido acceder al guardado en texto.\n");
-                    break;
-                case 0:
-                    printf("El archivo se ha guardado exitosamente en modo texto.\n");
-                    break;
-                }
-                printf("\n");
-                system("pause");
+            	if(banderaAlgoParaGuardar==0)
+            	{
+            		printf("No hay nada para guardar.");
+            	}else if(banderaAlgoParaGuardar==1)
+            	{
+					casosPosiblesDeRetorno=controller_saveAsText("data.csv", listaPasajeros);
+					switch(casosPosiblesDeRetorno)
+					{
+					case -1:
+						printf("Error: no se ha podido acceder al guardado en texto.\n");
+						break;
+					case 0:
+						printf("El archivo se ha guardado exitosamente en modo texto.\n");
+						break;
+					}
+					printf("\n");
+            	}
                 break;
             case 9:
-            	casosPosiblesDeRetorno = controller_saveAsBinary("data.bin", listaPasajeros);
-            	switch(casosPosiblesDeRetorno)
+            	if(banderaAlgoParaGuardar==0)
             	{
-        		case -1:
-        			printf("Error: no se ha podido acceder al guardado en binario.\n");
-        			break;
-        		case 0:
-        			printf("El archivo se ha guardado exitosamente en modo binario.\n");
-        			break;
+            		printf("No hay nada para guardar.");
+            	}else if(banderaAlgoParaGuardar==1)
+            	{
+					casosPosiblesDeRetorno = controller_saveAsBinary("data.bin", listaPasajeros);
+					switch(casosPosiblesDeRetorno)
+					{
+					case -1:
+						printf("Error: no se ha podido acceder al guardado en binario.\n");
+						break;
+					case 0:
+						printf("El archivo se ha guardado exitosamente en modo binario.\n");
+						break;
+					}
+						printf("\n");
             	}
-                    printf("\n");
                     break;
             case 10:
-            		//getYesOrNo("Esta seguro que desea salir? Ingrese s para SI o n para NO: ");
+            		getYesOrNo("Esta seguro que desea salir? Ingrese s para SI o n para NO: ");
             		printf("\n");
                     break;
             default:
