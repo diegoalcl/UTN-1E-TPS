@@ -1,0 +1,1001 @@
+id,especie,sexo,nombre,esquemaVacunacion,edad
+1,Canino,Hembra,Lupe,Vencido,6
+2,Felino,Macho,Pompy,Vencido,16
+3,Canino,Hembra,Lola,Incompleto,20
+4,Canino,Hembra,Reina,Incompleto,20
+5,Felino,Macho,Simon,Vencido,8
+6,Canino,Hembra,Mancha,Al dia,7
+7,Felino,Hembra,Sasha,Al dia,13
+8,Felino,Hembra,Honey,Vencido,4
+9,Felino,Hembra,Fiona,Vencido,5
+10,Canino,Macho,Otto,Al dia,17
+11,Felino,Macho,Zeus,Al dia,18
+12,Canino,Macho,Mancha,Al dia,17
+13,Canino,Hembra,Delfina,Incompleto,1
+14,Canino,Hembra,Sasha,Al dia,19
+15,Felino,Hembra,Nieve,Incompleto,9
+16,Felino,Hembra,Mancha,Incompleto,14
+17,Felino,Macho,Simba,Incompleto,20
+18,Canino,Macho,Junior,Al dia,6
+19,Felino,Hembra,Nieve,Incompleto,7
+20,Felino,Hembra,Nieve,Vencido,3
+21,Felino,Hembra,Luna,Vencido,4
+22,Felino,Macho,Pompy,Incompleto,3
+23,Canino,Hembra,Delfina,Vencido,15
+24,Felino,Macho,Bruno,Al dia,17
+25,Canino,Hembra,Mancha,Al dia,7
+26,Canino,Hembra,Nieve,Al dia,3
+27,Felino,Macho,Ringo,Incompleto,1
+28,Canino,Hembra,Honey,Incompleto,17
+29,Felino,Macho,Simon,Al dia,15
+30,Canino,Macho,Bruno,Al dia,12
+31,Canino,Macho,Rocky,Incompleto,8
+32,Canino,Macho,Simba,Incompleto,6
+33,Felino,Hembra,Reina,Incompleto,15
+34,Canino,Hembra,Fiona,Incompleto,3
+35,Felino,Macho,Zeus,Al dia,17
+36,Canino,Macho,Ringo,Incompleto,12
+37,Felino,Macho,Thor,Vencido,3
+38,Canino,Hembra,Lola,Al dia,6
+39,Felino,Hembra,Reina,Vencido,5
+40,Canino,Macho,Otto,Vencido,13
+41,Felino,Macho,Toto,Incompleto,4
+42,Canino,Hembra,Nieve,Incompleto,16
+43,Canino,Macho,Junior,Al dia,18
+44,Canino,Hembra,Trufa,Al dia,1
+45,Canino,Macho,Mancha,Vencido,3
+46,Canino,Macho,Hunter,Vencido,4
+47,Felino,Hembra,Delfina,Vencido,2
+48,Felino,Hembra,Moca,Vencido,9
+49,Canino,Hembra,Delfina,Vencido,9
+50,Felino,Macho,Ringo,Vencido,14
+51,Felino,Macho,Hunter,Incompleto,17
+52,Canino,Macho,Thor,Al dia,4
+53,Felino,Hembra,Mora,Incompleto,20
+54,Canino,Hembra,Fiona,Vencido,14
+55,Canino,Hembra,Lupe,Vencido,13
+56,Felino,Macho,Thor,Al dia,10
+57,Canino,Hembra,Honey,Incompleto,12
+58,Felino,Hembra,Reina,Al dia,13
+59,Felino,Hembra,Sasha,Incompleto,19
+60,Canino,Macho,Zeus,Vencido,5
+61,Felino,Macho,Ringo,Vencido,8
+62,Felino,Macho,Thor,Incompleto,17
+63,Canino,Macho,Toto,Al dia,10
+64,Felino,Macho,Ringo,Vencido,20
+65,Canino,Macho,Otto,Incompleto,9
+66,Felino,Hembra,Lola,Vencido,16
+67,Felino,Macho,Mancha,Al dia,2
+68,Canino,Macho,Simon,Incompleto,4
+69,Felino,Macho,Thor,Incompleto,18
+70,Canino,Macho,Junior,Al dia,12
+71,Felino,Macho,Junior,Incompleto,12
+72,Felino,Macho,Otto,Vencido,14
+73,Felino,Macho,Mancha,Vencido,16
+74,Felino,Hembra,Moca,Vencido,20
+75,Felino,Hembra,Sasha,Incompleto,11
+76,Felino,Macho,Mancha,Vencido,17
+77,Canino,Macho,Rocky,Vencido,10
+78,Felino,Macho,Zeus,Al dia,17
+79,Canino,Macho,Mancha,Vencido,20
+80,Felino,Macho,Mancha,Al dia,20
+81,Felino,Macho,Otto,Vencido,18
+82,Felino,Hembra,Lupe,Incompleto,20
+83,Canino,Macho,Mancha,Vencido,15
+84,Canino,Macho,Thor,Vencido,20
+85,Canino,Macho,Bruno,Vencido,3
+86,Canino,Macho,Toto,Vencido,19
+87,Canino,Hembra,Sasha,Incompleto,16
+88,Canino,Hembra,Mancha,Al dia,13
+89,Canino,Macho,Junior,Vencido,13
+90,Canino,Hembra,Lupe,Incompleto,10
+91,Canino,Hembra,Trufa,Al dia,19
+92,Canino,Hembra,Nieve,Incompleto,3
+93,Felino,Macho,Simon,Al dia,11
+94,Canino,Hembra,Lola,Incompleto,13
+95,Felino,Macho,Otto,Vencido,20
+96,Canino,Macho,Zeus,Incompleto,2
+97,Felino,Macho,Simon,Incompleto,11
+98,Felino,Hembra,Luna,Al dia,12
+99,Felino,Hembra,Trufa,Al dia,9
+100,Felino,Macho,Ringo,Vencido,18
+101,Canino,Macho,Chispa,Vencido,1
+102,Felino,Hembra,Trufa,Al dia,7
+103,Canino,Macho,Chispa,Vencido,18
+104,Canino,Macho,Zeus,Al dia,2
+105,Canino,Macho,Bruno,Incompleto,2
+106,Canino,Hembra,Luna,Al dia,20
+107,Felino,Hembra,Sasha,Incompleto,4
+108,Canino,Hembra,Sasha,Al dia,1
+109,Felino,Hembra,Reina,Vencido,5
+110,Canino,Macho,Pompy,Incompleto,18
+111,Felino,Macho,Mancha,Al dia,20
+112,Canino,Hembra,Honey,Incompleto,11
+113,Felino,Macho,Pompy,Incompleto,10
+114,Felino,Macho,Simon,Incompleto,16
+115,Felino,Macho,Mancha,Vencido,9
+116,Felino,Macho,Simba,Incompleto,7
+117,Felino,Hembra,Honey,Vencido,20
+118,Canino,Macho,Chispa,Vencido,14
+119,Felino,Macho,Simba,Al dia,5
+120,Canino,Hembra,Mora,Al dia,7
+121,Felino,Hembra,Honey,Al dia,18
+122,Felino,Hembra,Fiona,Al dia,7
+123,Felino,Hembra,Honey,Al dia,5
+124,Felino,Hembra,Sasha,Vencido,15
+125,Canino,Macho,Chispa,Al dia,18
+126,Canino,Hembra,Fiona,Vencido,15
+127,Felino,Macho,Thor,Vencido,7
+128,Canino,Macho,Simba,Vencido,18
+129,Felino,Macho,Pompy,Al dia,20
+130,Felino,Macho,Zeus,Vencido,7
+131,Canino,Macho,Chispa,Al dia,19
+132,Felino,Hembra,Luna,Vencido,3
+133,Felino,Macho,Rocky,Incompleto,17
+134,Felino,Hembra,Mancha,Al dia,9
+135,Felino,Hembra,Sasha,Al dia,8
+136,Canino,Hembra,Moca,Vencido,11
+137,Canino,Hembra,Sasha,Al dia,2
+138,Felino,Hembra,Fiona,Vencido,2
+139,Canino,Macho,Otto,Vencido,2
+140,Canino,Hembra,Mora,Vencido,20
+141,Felino,Hembra,Lola,Al dia,9
+142,Felino,Hembra,Moca,Incompleto,5
+143,Felino,Macho,Thor,Al dia,17
+144,Felino,Hembra,Delfina,Incompleto,2
+145,Felino,Hembra,Luna,Al dia,18
+146,Canino,Macho,Simba,Incompleto,3
+147,Felino,Hembra,Mora,Vencido,16
+148,Canino,Hembra,Sasha,Incompleto,11
+149,Felino,Hembra,Sasha,Al dia,1
+150,Felino,Macho,Otto,Incompleto,9
+151,Felino,Hembra,Mancha,Al dia,7
+152,Canino,Macho,Simba,Al dia,6
+153,Canino,Macho,Simon,Al dia,5
+154,Canino,Macho,Pompy,Al dia,1
+155,Canino,Hembra,Moca,Incompleto,17
+156,Canino,Hembra,Reina,Al dia,19
+157,Felino,Macho,Simon,Vencido,13
+158,Canino,Macho,Ringo,Incompleto,3
+159,Canino,Hembra,Luna,Al dia,9
+160,Canino,Macho,Chispa,Vencido,1
+161,Felino,Hembra,Lupe,Al dia,16
+162,Canino,Hembra,Sasha,Al dia,20
+163,Canino,Macho,Chispa,Al dia,2
+164,Canino,Hembra,Sasha,Incompleto,16
+165,Canino,Macho,Zeus,Incompleto,3
+166,Canino,Macho,Bruno,Incompleto,18
+167,Felino,Macho,Simba,Vencido,6
+168,Canino,Hembra,Honey,Vencido,8
+169,Felino,Hembra,Fiona,Incompleto,6
+170,Felino,Macho,Mancha,Al dia,7
+171,Canino,Macho,Bruno,Incompleto,11
+172,Canino,Hembra,Fiona,Incompleto,1
+173,Canino,Macho,Mancha,Incompleto,3
+174,Canino,Hembra,Reina,Vencido,14
+175,Canino,Macho,Pompy,Al dia,19
+176,Canino,Macho,Mancha,Al dia,17
+177,Canino,Hembra,Sasha,Vencido,8
+178,Canino,Hembra,Delfina,Vencido,13
+179,Canino,Macho,Mancha,Al dia,6
+180,Felino,Hembra,Sasha,Al dia,14
+181,Felino,Macho,Pompy,Vencido,19
+182,Canino,Hembra,Mancha,Incompleto,1
+183,Felino,Hembra,Luna,Incompleto,14
+184,Felino,Macho,Hunter,Incompleto,5
+185,Felino,Hembra,Mora,Vencido,1
+186,Felino,Hembra,Lola,Al dia,4
+187,Canino,Macho,Toto,Al dia,2
+188,Felino,Hembra,Lupe,Al dia,16
+189,Felino,Hembra,Lola,Vencido,1
+190,Canino,Hembra,Mora,Vencido,5
+191,Canino,Hembra,Honey,Al dia,12
+192,Canino,Hembra,Delfina,Vencido,19
+193,Felino,Macho,Pompy,Vencido,9
+194,Canino,Hembra,Lupe,Incompleto,15
+195,Canino,Hembra,Lupe,Incompleto,13
+196,Felino,Macho,Rocky,Incompleto,16
+197,Canino,Hembra,Sasha,Vencido,4
+198,Canino,Macho,Toto,Incompleto,7
+199,Felino,Macho,Bruno,Vencido,13
+200,Canino,Hembra,Luna,Incompleto,20
+201,Felino,Hembra,Reina,Al dia,14
+202,Felino,Hembra,Reina,Al dia,6
+203,Felino,Macho,Thor,Al dia,2
+204,Felino,Hembra,Delfina,Vencido,2
+205,Canino,Hembra,Delfina,Vencido,9
+206,Felino,Macho,Chispa,Incompleto,18
+207,Canino,Hembra,Mora,Al dia,4
+208,Canino,Macho,Otto,Incompleto,10
+209,Felino,Macho,Rocky,Al dia,17
+210,Felino,Hembra,Fiona,Incompleto,15
+211,Canino,Macho,Toto,Incompleto,13
+212,Canino,Hembra,Fiona,Al dia,11
+213,Canino,Macho,Simon,Al dia,1
+214,Canino,Hembra,Luna,Al dia,1
+215,Canino,Macho,Junior,Incompleto,15
+216,Canino,Macho,Pompy,Incompleto,9
+217,Felino,Hembra,Nieve,Al dia,9
+218,Canino,Hembra,Lupe,Vencido,18
+219,Canino,Hembra,Lupe,Incompleto,16
+220,Canino,Hembra,Reina,Al dia,13
+221,Canino,Macho,Rocky,Al dia,13
+222,Felino,Macho,Zeus,Vencido,9
+223,Canino,Macho,Otto,Incompleto,12
+224,Canino,Macho,Junior,Al dia,19
+225,Felino,Macho,Simon,Incompleto,9
+226,Canino,Hembra,Fiona,Al dia,19
+227,Canino,Hembra,Lola,Incompleto,7
+228,Felino,Hembra,Delfina,Incompleto,1
+229,Canino,Hembra,Lupe,Al dia,2
+230,Canino,Hembra,Honey,Incompleto,17
+231,Canino,Macho,Bruno,Al dia,13
+232,Felino,Hembra,Reina,Al dia,10
+233,Felino,Macho,Otto,Vencido,9
+234,Canino,Hembra,Luna,Al dia,20
+235,Canino,Hembra,Mora,Al dia,2
+236,Felino,Macho,Thor,Incompleto,6
+237,Canino,Hembra,Mora,Incompleto,5
+238,Felino,Hembra,Mancha,Al dia,4
+239,Canino,Macho,Thor,Incompleto,19
+240,Canino,Macho,Otto,Vencido,8
+241,Canino,Hembra,Honey,Incompleto,17
+242,Canino,Macho,Hunter,Incompleto,9
+243,Canino,Macho,Simba,Al dia,5
+244,Felino,Hembra,Mora,Vencido,4
+245,Felino,Hembra,Luna,Vencido,9
+246,Felino,Macho,Pompy,Incompleto,6
+247,Canino,Macho,Otto,Vencido,2
+248,Felino,Hembra,Trufa,Incompleto,20
+249,Felino,Macho,Otto,Al dia,19
+250,Canino,Hembra,Trufa,Al dia,14
+251,Canino,Macho,Chispa,Incompleto,20
+252,Felino,Hembra,Honey,Al dia,18
+253,Canino,Hembra,Lupe,Incompleto,11
+254,Felino,Macho,Pompy,Incompleto,13
+255,Felino,Macho,Chispa,Vencido,8
+256,Felino,Macho,Otto,Incompleto,9
+257,Canino,Macho,Otto,Incompleto,8
+258,Canino,Macho,Mancha,Incompleto,4
+259,Canino,Hembra,Reina,Al dia,13
+260,Canino,Macho,Rocky,Vencido,17
+261,Canino,Hembra,Trufa,Al dia,15
+262,Canino,Hembra,Delfina,Al dia,11
+263,Felino,Macho,Pompy,Vencido,4
+264,Canino,Macho,Mancha,Vencido,10
+265,Felino,Macho,Junior,Vencido,1
+266,Felino,Macho,Pompy,Incompleto,12
+267,Felino,Macho,Chispa,Incompleto,8
+268,Felino,Hembra,Delfina,Al dia,7
+269,Canino,Macho,Simba,Vencido,4
+270,Canino,Hembra,Mancha,Al dia,5
+271,Canino,Macho,Hunter,Vencido,9
+272,Felino,Hembra,Reina,Vencido,10
+273,Felino,Macho,Pompy,Al dia,12
+274,Felino,Hembra,Sasha,Vencido,12
+275,Felino,Hembra,Lola,Incompleto,19
+276,Canino,Hembra,Luna,Al dia,3
+277,Canino,Macho,Mancha,Al dia,18
+278,Felino,Macho,Simon,Al dia,16
+279,Felino,Hembra,Lola,Incompleto,4
+280,Felino,Macho,Bruno,Vencido,19
+281,Felino,Macho,Ringo,Incompleto,18
+282,Canino,Macho,Simba,Vencido,6
+283,Felino,Hembra,Trufa,Al dia,8
+284,Canino,Macho,Rocky,Incompleto,18
+285,Felino,Macho,Rocky,Vencido,6
+286,Felino,Hembra,Moca,Al dia,18
+287,Canino,Macho,Bruno,Incompleto,3
+288,Canino,Macho,Bruno,Al dia,4
+289,Canino,Macho,Mancha,Vencido,10
+290,Felino,Hembra,Sasha,Incompleto,8
+291,Canino,Hembra,Moca,Vencido,7
+292,Felino,Hembra,Delfina,Incompleto,13
+293,Canino,Macho,Hunter,Vencido,4
+294,Felino,Macho,Bruno,Al dia,19
+295,Canino,Macho,Thor,Al dia,6
+296,Felino,Hembra,Lupe,Al dia,1
+297,Felino,Hembra,Trufa,Al dia,17
+298,Canino,Macho,Bruno,Al dia,15
+299,Felino,Macho,Bruno,Vencido,18
+300,Canino,Hembra,Trufa,Vencido,4
+301,Felino,Macho,Hunter,Incompleto,13
+302,Felino,Hembra,Lola,Vencido,1
+303,Felino,Hembra,Reina,Incompleto,12
+304,Canino,Macho,Mancha,Vencido,12
+305,Felino,Macho,Ringo,Vencido,1
+306,Felino,Hembra,Nieve,Vencido,8
+307,Canino,Macho,Otto,Incompleto,10
+308,Canino,Hembra,Moca,Vencido,11
+309,Felino,Hembra,Luna,Al dia,11
+310,Canino,Hembra,Delfina,Vencido,12
+311,Canino,Macho,Toto,Vencido,15
+312,Canino,Hembra,Mora,Vencido,17
+313,Canino,Hembra,Honey,Al dia,9
+314,Canino,Hembra,Trufa,Incompleto,7
+315,Felino,Hembra,Honey,Al dia,11
+316,Canino,Macho,Otto,Vencido,3
+317,Felino,Macho,Mancha,Vencido,7
+318,Canino,Macho,Pompy,Incompleto,19
+319,Felino,Hembra,Nieve,Incompleto,20
+320,Canino,Macho,Thor,Incompleto,15
+321,Felino,Hembra,Luna,Al dia,10
+322,Canino,Hembra,Delfina,Vencido,11
+323,Felino,Macho,Otto,Vencido,10
+324,Canino,Macho,Hunter,Vencido,10
+325,Felino,Macho,Simon,Vencido,12
+326,Canino,Macho,Chispa,Incompleto,13
+327,Canino,Hembra,Lola,Al dia,5
+328,Felino,Hembra,Sasha,Vencido,14
+329,Felino,Hembra,Sasha,Vencido,10
+330,Felino,Macho,Pompy,Al dia,6
+331,Canino,Hembra,Mancha,Incompleto,17
+332,Felino,Macho,Otto,Vencido,1
+333,Canino,Hembra,Trufa,Incompleto,9
+334,Felino,Hembra,Lola,Incompleto,16
+335,Felino,Macho,Hunter,Incompleto,3
+336,Felino,Hembra,Sasha,Incompleto,18
+337,Felino,Macho,Thor,Al dia,7
+338,Felino,Macho,Bruno,Incompleto,15
+339,Felino,Hembra,Mora,Incompleto,20
+340,Felino,Hembra,Mancha,Vencido,1
+341,Canino,Macho,Zeus,Vencido,11
+342,Felino,Hembra,Mancha,Incompleto,17
+343,Canino,Macho,Pompy,Vencido,8
+344,Canino,Hembra,Reina,Vencido,3
+345,Felino,Hembra,Nieve,Incompleto,3
+346,Canino,Macho,Thor,Vencido,17
+347,Canino,Hembra,Lola,Incompleto,1
+348,Canino,Macho,Otto,Incompleto,5
+349,Felino,Hembra,Moca,Incompleto,1
+350,Felino,Macho,Zeus,Vencido,17
+351,Canino,Macho,Rocky,Vencido,15
+352,Canino,Macho,Rocky,Incompleto,19
+353,Felino,Macho,Otto,Vencido,16
+354,Felino,Hembra,Nieve,Vencido,16
+355,Canino,Macho,Rocky,Incompleto,10
+356,Canino,Hembra,Mancha,Incompleto,14
+357,Felino,Hembra,Fiona,Al dia,5
+358,Canino,Macho,Bruno,Vencido,2
+359,Felino,Hembra,Fiona,Al dia,14
+360,Canino,Hembra,Honey,Al dia,10
+361,Canino,Hembra,Moca,Al dia,11
+362,Felino,Macho,Chispa,Incompleto,11
+363,Canino,Macho,Hunter,Vencido,13
+364,Felino,Macho,Rocky,Incompleto,19
+365,Canino,Macho,Chispa,Al dia,11
+366,Felino,Hembra,Lola,Al dia,9
+367,Felino,Macho,Ringo,Al dia,13
+368,Canino,Macho,Simba,Incompleto,9
+369,Canino,Macho,Thor,Vencido,4
+370,Felino,Macho,Ringo,Incompleto,16
+371,Felino,Macho,Simon,Vencido,8
+372,Felino,Macho,Otto,Al dia,1
+373,Canino,Hembra,Mancha,Al dia,2
+374,Canino,Hembra,Nieve,Al dia,12
+375,Canino,Hembra,Fiona,Vencido,2
+376,Canino,Hembra,Lola,Al dia,9
+377,Felino,Hembra,Mancha,Incompleto,11
+378,Canino,Macho,Mancha,Al dia,2
+379,Canino,Macho,Junior,Incompleto,1
+380,Canino,Macho,Simba,Incompleto,8
+381,Felino,Macho,Toto,Vencido,17
+382,Canino,Hembra,Moca,Vencido,4
+383,Felino,Macho,Otto,Al dia,3
+384,Canino,Macho,Zeus,Incompleto,18
+385,Canino,Macho,Junior,Al dia,9
+386,Canino,Macho,Pompy,Al dia,16
+387,Canino,Hembra,Nieve,Incompleto,18
+388,Canino,Hembra,Luna,Incompleto,17
+389,Felino,Macho,Thor,Vencido,9
+390,Felino,Hembra,Honey,Incompleto,15
+391,Felino,Hembra,Sasha,Incompleto,6
+392,Felino,Hembra,Lola,Vencido,15
+393,Canino,Hembra,Sasha,Al dia,1
+394,Felino,Macho,Simba,Incompleto,15
+395,Felino,Macho,Zeus,Incompleto,4
+396,Felino,Macho,Simon,Vencido,10
+397,Felino,Macho,Zeus,Al dia,2
+398,Felino,Macho,Ringo,Vencido,1
+399,Canino,Hembra,Sasha,Incompleto,17
+400,Canino,Macho,Rocky,Al dia,19
+401,Canino,Macho,Junior,Al dia,18
+402,Canino,Hembra,Mora,Al dia,6
+403,Canino,Macho,Rocky,Vencido,5
+404,Canino,Macho,Thor,Al dia,10
+405,Felino,Macho,Zeus,Incompleto,19
+406,Felino,Hembra,Moca,Incompleto,9
+407,Canino,Macho,Toto,Al dia,5
+408,Felino,Macho,Chispa,Vencido,6
+409,Felino,Macho,Rocky,Vencido,4
+410,Canino,Hembra,Luna,Incompleto,19
+411,Canino,Macho,Junior,Incompleto,14
+412,Canino,Hembra,Reina,Vencido,9
+413,Felino,Hembra,Luna,Vencido,2
+414,Felino,Macho,Ringo,Vencido,11
+415,Canino,Macho,Otto,Incompleto,3
+416,Canino,Hembra,Mora,Vencido,19
+417,Canino,Hembra,Fiona,Al dia,10
+418,Felino,Hembra,Honey,Vencido,1
+419,Felino,Macho,Bruno,Vencido,20
+420,Felino,Macho,Simba,Al dia,6
+421,Felino,Hembra,Lupe,Al dia,14
+422,Canino,Macho,Ringo,Al dia,13
+423,Canino,Macho,Rocky,Incompleto,16
+424,Canino,Hembra,Delfina,Incompleto,11
+425,Felino,Hembra,Trufa,Vencido,20
+426,Canino,Hembra,Mancha,Incompleto,19
+427,Canino,Macho,Simon,Incompleto,9
+428,Canino,Macho,Simba,Incompleto,8
+429,Canino,Hembra,Mancha,Al dia,4
+430,Canino,Macho,Otto,Incompleto,16
+431,Felino,Hembra,Honey,Al dia,10
+432,Felino,Hembra,Mora,Vencido,5
+433,Canino,Hembra,Sasha,Incompleto,4
+434,Canino,Hembra,Trufa,Vencido,20
+435,Felino,Hembra,Trufa,Incompleto,14
+436,Felino,Hembra,Moca,Incompleto,11
+437,Canino,Macho,Ringo,Al dia,20
+438,Canino,Hembra,Honey,Al dia,19
+439,Felino,Hembra,Fiona,Vencido,2
+440,Felino,Hembra,Lupe,Al dia,10
+441,Canino,Macho,Otto,Incompleto,17
+442,Felino,Hembra,Mora,Vencido,13
+443,Felino,Macho,Bruno,Vencido,16
+444,Felino,Macho,Mancha,Incompleto,8
+445,Felino,Hembra,Sasha,Incompleto,4
+446,Felino,Macho,Rocky,Vencido,7
+447,Felino,Hembra,Reina,Al dia,15
+448,Felino,Hembra,Mancha,Al dia,4
+449,Felino,Macho,Hunter,Vencido,7
+450,Canino,Hembra,Lupe,Al dia,14
+451,Felino,Macho,Hunter,Vencido,12
+452,Canino,Macho,Junior,Vencido,12
+453,Felino,Hembra,Lupe,Al dia,6
+454,Felino,Hembra,Reina,Al dia,8
+455,Canino,Hembra,Luna,Vencido,14
+456,Felino,Hembra,Trufa,Incompleto,16
+457,Canino,Macho,Rocky,Incompleto,5
+458,Felino,Hembra,Mancha,Vencido,15
+459,Felino,Hembra,Lupe,Vencido,7
+460,Felino,Macho,Pompy,Incompleto,13
+461,Felino,Macho,Zeus,Incompleto,5
+462,Canino,Hembra,Lola,Incompleto,10
+463,Canino,Hembra,Trufa,Incompleto,3
+464,Canino,Hembra,Reina,Incompleto,6
+465,Felino,Hembra,Lupe,Incompleto,9
+466,Canino,Macho,Ringo,Al dia,18
+467,Canino,Macho,Otto,Al dia,20
+468,Felino,Hembra,Nieve,Al dia,8
+469,Felino,Macho,Simon,Al dia,17
+470,Canino,Macho,Hunter,Al dia,6
+471,Felino,Hembra,Honey,Vencido,20
+472,Canino,Macho,Hunter,Incompleto,15
+473,Canino,Hembra,Moca,Vencido,19
+474,Felino,Hembra,Delfina,Al dia,9
+475,Felino,Macho,Toto,Incompleto,3
+476,Felino,Macho,Ringo,Al dia,13
+477,Canino,Hembra,Fiona,Incompleto,9
+478,Felino,Macho,Junior,Al dia,18
+479,Felino,Macho,Chispa,Al dia,9
+480,Canino,Hembra,Luna,Incompleto,10
+481,Felino,Macho,Thor,Vencido,13
+482,Canino,Hembra,Trufa,Vencido,4
+483,Felino,Hembra,Honey,Incompleto,8
+484,Canino,Macho,Simon,Vencido,18
+485,Felino,Macho,Ringo,Vencido,16
+486,Felino,Macho,Hunter,Al dia,20
+487,Canino,Hembra,Sasha,Incompleto,4
+488,Canino,Macho,Mancha,Al dia,5
+489,Felino,Macho,Zeus,Vencido,4
+490,Canino,Hembra,Lola,Incompleto,4
+491,Felino,Macho,Pompy,Al dia,18
+492,Canino,Macho,Junior,Al dia,19
+493,Felino,Macho,Hunter,Vencido,20
+494,Felino,Macho,Rocky,Vencido,1
+495,Canino,Macho,Toto,Vencido,17
+496,Canino,Macho,Bruno,Incompleto,1
+497,Canino,Macho,Toto,Al dia,7
+498,Felino,Macho,Zeus,Al dia,11
+499,Felino,Macho,Toto,Vencido,18
+500,Canino,Macho,Simba,Al dia,3
+501,Canino,Hembra,Reina,Vencido,13
+502,Felino,Hembra,Luna,Al dia,4
+503,Canino,Hembra,Delfina,Incompleto,6
+504,Canino,Macho,Ringo,Al dia,4
+505,Felino,Hembra,Honey,Vencido,18
+506,Canino,Macho,Ringo,Al dia,18
+507,Canino,Hembra,Reina,Al dia,7
+508,Canino,Hembra,Reina,Al dia,20
+509,Felino,Macho,Bruno,Vencido,3
+510,Felino,Hembra,Honey,Al dia,13
+511,Canino,Macho,Simon,Vencido,1
+512,Felino,Hembra,Moca,Al dia,13
+513,Canino,Macho,Pompy,Incompleto,14
+514,Felino,Hembra,Trufa,Vencido,9
+515,Felino,Hembra,Mancha,Vencido,14
+516,Canino,Hembra,Honey,Incompleto,11
+517,Canino,Hembra,Luna,Vencido,14
+518,Canino,Hembra,Mancha,Vencido,20
+519,Felino,Macho,Toto,Vencido,3
+520,Felino,Hembra,Trufa,Vencido,9
+521,Felino,Hembra,Delfina,Al dia,17
+522,Felino,Hembra,Fiona,Incompleto,18
+523,Felino,Hembra,Lola,Incompleto,16
+524,Felino,Macho,Thor,Vencido,8
+525,Canino,Hembra,Fiona,Vencido,3
+526,Felino,Hembra,Reina,Incompleto,3
+527,Canino,Macho,Junior,Incompleto,5
+528,Felino,Macho,Thor,Incompleto,12
+529,Canino,Macho,Bruno,Al dia,2
+530,Canino,Macho,Bruno,Incompleto,5
+531,Felino,Macho,Junior,Incompleto,5
+532,Canino,Hembra,Luna,Incompleto,8
+533,Canino,Hembra,Delfina,Incompleto,20
+534,Felino,Hembra,Lola,Incompleto,18
+535,Canino,Hembra,Nieve,Incompleto,5
+536,Canino,Macho,Hunter,Vencido,12
+537,Felino,Macho,Rocky,Vencido,17
+538,Felino,Macho,Rocky,Vencido,15
+539,Felino,Hembra,Reina,Incompleto,2
+540,Canino,Macho,Chispa,Al dia,6
+541,Canino,Hembra,Fiona,Incompleto,2
+542,Canino,Hembra,Honey,Incompleto,15
+543,Canino,Hembra,Lola,Incompleto,4
+544,Felino,Hembra,Honey,Incompleto,19
+545,Felino,Hembra,Mancha,Vencido,6
+546,Felino,Macho,Chispa,Incompleto,13
+547,Felino,Macho,Zeus,Vencido,9
+548,Canino,Macho,Toto,Al dia,14
+549,Felino,Macho,Chispa,Al dia,14
+550,Felino,Hembra,Honey,Incompleto,7
+551,Canino,Macho,Simba,Vencido,19
+552,Felino,Macho,Simba,Incompleto,8
+553,Felino,Macho,Bruno,Al dia,16
+554,Felino,Macho,Hunter,Incompleto,6
+555,Canino,Hembra,Lupe,Incompleto,11
+556,Felino,Macho,Simba,Al dia,8
+557,Felino,Hembra,Sasha,Al dia,19
+558,Felino,Hembra,Nieve,Vencido,16
+559,Canino,Hembra,Delfina,Incompleto,5
+560,Canino,Hembra,Moca,Incompleto,1
+561,Canino,Macho,Thor,Al dia,1
+562,Felino,Hembra,Lupe,Vencido,13
+563,Canino,Macho,Ringo,Al dia,8
+564,Felino,Hembra,Sasha,Al dia,7
+565,Felino,Hembra,Fiona,Incompleto,11
+566,Felino,Hembra,Fiona,Incompleto,13
+567,Felino,Hembra,Sasha,Incompleto,6
+568,Felino,Hembra,Honey,Vencido,12
+569,Felino,Hembra,Luna,Vencido,14
+570,Canino,Hembra,Reina,Vencido,14
+571,Canino,Macho,Rocky,Vencido,1
+572,Felino,Macho,Mancha,Vencido,13
+573,Felino,Macho,Zeus,Al dia,1
+574,Felino,Macho,Pompy,Al dia,8
+575,Canino,Hembra,Trufa,Incompleto,13
+576,Felino,Macho,Junior,Incompleto,9
+577,Felino,Macho,Toto,Vencido,17
+578,Felino,Hembra,Moca,Al dia,19
+579,Canino,Macho,Thor,Incompleto,3
+580,Felino,Macho,Otto,Al dia,17
+581,Felino,Hembra,Sasha,Vencido,15
+582,Canino,Hembra,Lupe,Al dia,18
+583,Canino,Macho,Zeus,Incompleto,9
+584,Felino,Hembra,Lola,Incompleto,18
+585,Canino,Macho,Pompy,Incompleto,17
+586,Felino,Macho,Mancha,Al dia,10
+587,Canino,Macho,Thor,Al dia,4
+588,Canino,Hembra,Honey,Incompleto,20
+589,Canino,Macho,Hunter,Incompleto,3
+590,Felino,Hembra,Honey,Incompleto,8
+591,Canino,Macho,Ringo,Al dia,3
+592,Canino,Macho,Chispa,Vencido,17
+593,Canino,Hembra,Reina,Al dia,7
+594,Canino,Hembra,Nieve,Al dia,13
+595,Canino,Macho,Junior,Vencido,1
+596,Felino,Hembra,Fiona,Incompleto,8
+597,Felino,Macho,Simba,Al dia,9
+598,Canino,Macho,Zeus,Al dia,4
+599,Felino,Macho,Mancha,Vencido,8
+600,Felino,Macho,Junior,Vencido,1
+601,Canino,Macho,Pompy,Vencido,13
+602,Canino,Macho,Ringo,Vencido,4
+603,Canino,Macho,Ringo,Vencido,4
+604,Canino,Hembra,Lupe,Al dia,16
+605,Canino,Hembra,Lola,Incompleto,12
+606,Canino,Hembra,Lola,Incompleto,13
+607,Felino,Hembra,Fiona,Incompleto,16
+608,Felino,Macho,Hunter,Vencido,15
+609,Felino,Macho,Zeus,Incompleto,5
+610,Felino,Hembra,Honey,Al dia,16
+611,Canino,Macho,Mancha,Al dia,14
+612,Felino,Macho,Mancha,Al dia,9
+613,Felino,Macho,Zeus,Vencido,15
+614,Felino,Macho,Zeus,Vencido,1
+615,Canino,Macho,Pompy,Vencido,11
+616,Felino,Hembra,Moca,Al dia,14
+617,Felino,Macho,Simon,Vencido,4
+618,Canino,Hembra,Mora,Al dia,18
+619,Canino,Macho,Ringo,Vencido,16
+620,Felino,Hembra,Lupe,Al dia,12
+621,Felino,Hembra,Reina,Vencido,18
+622,Canino,Hembra,Trufa,Incompleto,12
+623,Felino,Macho,Otto,Incompleto,5
+624,Felino,Hembra,Mora,Incompleto,8
+625,Canino,Macho,Mancha,Incompleto,14
+626,Canino,Macho,Zeus,Incompleto,14
+627,Canino,Macho,Thor,Al dia,8
+628,Canino,Hembra,Lupe,Vencido,12
+629,Canino,Macho,Ringo,Al dia,5
+630,Canino,Hembra,Reina,Al dia,5
+631,Felino,Macho,Otto,Al dia,13
+632,Canino,Hembra,Trufa,Al dia,14
+633,Canino,Hembra,Sasha,Incompleto,15
+634,Felino,Hembra,Sasha,Incompleto,6
+635,Felino,Hembra,Delfina,Al dia,13
+636,Canino,Hembra,Delfina,Vencido,15
+637,Canino,Hembra,Mancha,Vencido,2
+638,Canino,Macho,Chispa,Vencido,3
+639,Felino,Macho,Bruno,Incompleto,14
+640,Felino,Hembra,Delfina,Incompleto,12
+641,Felino,Hembra,Sasha,Al dia,14
+642,Felino,Macho,Pompy,Vencido,14
+643,Canino,Macho,Simba,Vencido,13
+644,Felino,Hembra,Honey,Incompleto,2
+645,Felino,Macho,Simon,Vencido,14
+646,Canino,Macho,Zeus,Al dia,5
+647,Canino,Macho,Simon,Incompleto,1
+648,Canino,Hembra,Fiona,Incompleto,8
+649,Canino,Hembra,Sasha,Al dia,5
+650,Felino,Hembra,Fiona,Vencido,8
+651,Felino,Macho,Otto,Incompleto,9
+652,Canino,Hembra,Nieve,Incompleto,20
+653,Canino,Macho,Hunter,Incompleto,7
+654,Felino,Hembra,Nieve,Vencido,14
+655,Felino,Macho,Zeus,Al dia,17
+656,Felino,Macho,Bruno,Incompleto,4
+657,Felino,Macho,Chispa,Incompleto,11
+658,Felino,Macho,Bruno,Incompleto,3
+659,Canino,Hembra,Reina,Vencido,10
+660,Felino,Macho,Chispa,Al dia,15
+661,Canino,Hembra,Lupe,Al dia,14
+662,Canino,Macho,Hunter,Incompleto,9
+663,Felino,Macho,Pompy,Al dia,17
+664,Canino,Macho,Junior,Vencido,11
+665,Felino,Hembra,Moca,Al dia,7
+666,Canino,Hembra,Honey,Incompleto,17
+667,Felino,Hembra,Trufa,Al dia,18
+668,Felino,Macho,Toto,Al dia,4
+669,Felino,Macho,Mancha,Al dia,17
+670,Felino,Macho,Rocky,Vencido,18
+671,Canino,Macho,Otto,Incompleto,8
+672,Felino,Hembra,Fiona,Vencido,5
+673,Canino,Hembra,Mora,Incompleto,20
+674,Felino,Hembra,Moca,Incompleto,7
+675,Canino,Hembra,Honey,Vencido,12
+676,Felino,Hembra,Nieve,Vencido,10
+677,Canino,Macho,Hunter,Al dia,20
+678,Felino,Hembra,Lupe,Vencido,19
+679,Felino,Hembra,Lupe,Vencido,14
+680,Felino,Macho,Bruno,Incompleto,7
+681,Felino,Macho,Zeus,Vencido,1
+682,Canino,Hembra,Mancha,Vencido,12
+683,Felino,Hembra,Nieve,Al dia,13
+684,Felino,Macho,Ringo,Vencido,2
+685,Felino,Hembra,Lupe,Incompleto,14
+686,Canino,Macho,Junior,Incompleto,20
+687,Felino,Hembra,Lupe,Vencido,20
+688,Felino,Macho,Ringo,Vencido,13
+689,Felino,Macho,Simon,Vencido,12
+690,Canino,Hembra,Sasha,Incompleto,5
+691,Canino,Macho,Zeus,Incompleto,4
+692,Canino,Macho,Junior,Incompleto,14
+693,Canino,Macho,Otto,Al dia,20
+694,Felino,Macho,Bruno,Incompleto,17
+695,Felino,Hembra,Moca,Vencido,7
+696,Canino,Macho,Ringo,Al dia,15
+697,Felino,Hembra,Delfina,Vencido,8
+698,Canino,Macho,Rocky,Vencido,18
+699,Felino,Hembra,Nieve,Incompleto,9
+700,Canino,Macho,Bruno,Incompleto,12
+701,Canino,Macho,Otto,Vencido,20
+702,Felino,Macho,Toto,Al dia,19
+703,Felino,Macho,Pompy,Incompleto,1
+704,Felino,Macho,Ringo,Incompleto,6
+705,Canino,Macho,Ringo,Incompleto,8
+706,Canino,Macho,Pompy,Incompleto,1
+707,Canino,Macho,Junior,Incompleto,12
+708,Canino,Hembra,Luna,Incompleto,15
+709,Felino,Hembra,Mancha,Al dia,6
+710,Canino,Macho,Toto,Incompleto,5
+711,Canino,Hembra,Delfina,Vencido,8
+712,Felino,Hembra,Honey,Al dia,20
+713,Felino,Macho,Chispa,Vencido,19
+714,Canino,Hembra,Moca,Vencido,10
+715,Felino,Macho,Otto,Vencido,16
+716,Canino,Macho,Hunter,Vencido,11
+717,Felino,Hembra,Mora,Vencido,13
+718,Felino,Macho,Otto,Vencido,5
+719,Canino,Macho,Rocky,Vencido,20
+720,Canino,Macho,Zeus,Incompleto,18
+721,Canino,Hembra,Mora,Al dia,7
+722,Canino,Hembra,Honey,Incompleto,1
+723,Felino,Hembra,Mancha,Vencido,12
+724,Canino,Hembra,Mancha,Al dia,4
+725,Canino,Macho,Ringo,Al dia,7
+726,Canino,Macho,Mancha,Al dia,1
+727,Canino,Macho,Simba,Al dia,15
+728,Felino,Macho,Rocky,Incompleto,1
+729,Canino,Macho,Mancha,Incompleto,11
+730,Felino,Hembra,Mora,Vencido,10
+731,Felino,Hembra,Moca,Al dia,8
+732,Felino,Hembra,Lola,Al dia,2
+733,Canino,Macho,Pompy,Incompleto,6
+734,Felino,Hembra,Trufa,Al dia,15
+735,Canino,Macho,Simon,Vencido,10
+736,Felino,Macho,Otto,Incompleto,18
+737,Felino,Hembra,Moca,Incompleto,13
+738,Felino,Macho,Chispa,Incompleto,17
+739,Canino,Macho,Toto,Al dia,7
+740,Felino,Macho,Otto,Incompleto,1
+741,Felino,Hembra,Luna,Incompleto,14
+742,Felino,Hembra,Honey,Vencido,18
+743,Felino,Macho,Simba,Vencido,16
+744,Canino,Macho,Hunter,Vencido,6
+745,Canino,Hembra,Lola,Incompleto,9
+746,Canino,Hembra,Honey,Incompleto,8
+747,Felino,Hembra,Nieve,Incompleto,3
+748,Felino,Macho,Otto,Incompleto,4
+749,Felino,Macho,Otto,Vencido,4
+750,Felino,Macho,Simon,Vencido,15
+751,Canino,Hembra,Lupe,Vencido,12
+752,Canino,Macho,Ringo,Al dia,12
+753,Canino,Hembra,Moca,Vencido,14
+754,Felino,Hembra,Lola,Incompleto,14
+755,Canino,Macho,Pompy,Incompleto,18
+756,Felino,Hembra,Lupe,Al dia,1
+757,Felino,Hembra,Fiona,Al dia,4
+758,Canino,Macho,Ringo,Al dia,7
+759,Felino,Hembra,Trufa,Incompleto,6
+760,Canino,Macho,Chispa,Incompleto,2
+761,Canino,Macho,Mancha,Incompleto,7
+762,Canino,Hembra,Luna,Al dia,10
+763,Canino,Hembra,Sasha,Vencido,8
+764,Canino,Hembra,Mancha,Vencido,19
+765,Canino,Hembra,Delfina,Al dia,14
+766,Felino,Macho,Pompy,Vencido,18
+767,Canino,Hembra,Delfina,Incompleto,3
+768,Canino,Macho,Thor,Vencido,4
+769,Canino,Hembra,Nieve,Vencido,5
+770,Canino,Macho,Bruno,Incompleto,4
+771,Canino,Macho,Rocky,Al dia,13
+772,Felino,Hembra,Fiona,Vencido,11
+773,Felino,Macho,Toto,Incompleto,1
+774,Felino,Macho,Toto,Vencido,18
+775,Canino,Macho,Ringo,Al dia,19
+776,Felino,Hembra,Lola,Vencido,10
+777,Canino,Hembra,Reina,Incompleto,13
+778,Canino,Macho,Thor,Al dia,17
+779,Felino,Hembra,Reina,Al dia,6
+780,Felino,Macho,Chispa,Al dia,10
+781,Felino,Hembra,Fiona,Vencido,10
+782,Canino,Hembra,Delfina,Vencido,17
+783,Canino,Hembra,Fiona,Vencido,17
+784,Felino,Macho,Rocky,Incompleto,15
+785,Canino,Macho,Simon,Incompleto,5
+786,Canino,Macho,Chispa,Al dia,15
+787,Canino,Macho,Ringo,Vencido,11
+788,Felino,Macho,Simba,Vencido,6
+789,Felino,Hembra,Fiona,Incompleto,13
+790,Canino,Hembra,Mancha,Incompleto,10
+791,Canino,Hembra,Luna,Vencido,11
+792,Canino,Hembra,Lola,Incompleto,11
+793,Canino,Hembra,Moca,Al dia,5
+794,Felino,Hembra,Luna,Vencido,15
+795,Canino,Macho,Ringo,Incompleto,10
+796,Canino,Macho,Bruno,Incompleto,12
+797,Canino,Hembra,Trufa,Al dia,10
+798,Felino,Macho,Simon,Vencido,10
+799,Felino,Hembra,Delfina,Incompleto,5
+800,Canino,Macho,Bruno,Incompleto,15
+801,Canino,Hembra,Mancha,Vencido,19
+802,Canino,Macho,Pompy,Al dia,18
+803,Canino,Hembra,Nieve,Al dia,6
+804,Canino,Macho,Hunter,Vencido,5
+805,Canino,Macho,Toto,Al dia,1
+806,Felino,Macho,Thor,Vencido,10
+807,Canino,Macho,Rocky,Vencido,19
+808,Felino,Hembra,Lupe,Vencido,7
+809,Canino,Macho,Chispa,Incompleto,6
+810,Felino,Macho,Hunter,Vencido,19
+811,Felino,Macho,Otto,Vencido,8
+812,Canino,Macho,Bruno,Incompleto,20
+813,Felino,Macho,Bruno,Vencido,6
+814,Felino,Macho,Junior,Al dia,1
+815,Felino,Hembra,Lola,Incompleto,11
+816,Felino,Macho,Junior,Al dia,5
+817,Canino,Hembra,Delfina,Vencido,13
+818,Felino,Macho,Rocky,Al dia,8
+819,Felino,Macho,Pompy,Vencido,14
+820,Canino,Hembra,Mora,Al dia,10
+821,Canino,Macho,Rocky,Al dia,4
+822,Felino,Hembra,Luna,Vencido,14
+823,Felino,Hembra,Nieve,Al dia,9
+824,Canino,Macho,Simba,Vencido,16
+825,Canino,Hembra,Lupe,Incompleto,15
+826,Canino,Macho,Junior,Incompleto,4
+827,Felino,Hembra,Mora,Incompleto,20
+828,Felino,Macho,Simon,Al dia,10
+829,Felino,Hembra,Luna,Vencido,20
+830,Canino,Hembra,Moca,Al dia,2
+831,Canino,Macho,Rocky,Vencido,6
+832,Felino,Hembra,Fiona,Al dia,12
+833,Canino,Macho,Pompy,Vencido,8
+834,Felino,Hembra,Mora,Al dia,20
+835,Canino,Hembra,Mora,Vencido,7
+836,Felino,Hembra,Reina,Al dia,20
+837,Canino,Macho,Pompy,Al dia,15
+838,Felino,Hembra,Nieve,Vencido,16
+839,Canino,Hembra,Delfina,Al dia,4
+840,Canino,Hembra,Reina,Incompleto,11
+841,Felino,Macho,Junior,Vencido,2
+842,Canino,Macho,Otto,Al dia,13
+843,Canino,Hembra,Fiona,Al dia,16
+844,Felino,Hembra,Lupe,Al dia,10
+845,Canino,Macho,Zeus,Al dia,7
+846,Felino,Hembra,Delfina,Vencido,14
+847,Canino,Macho,Chispa,Incompleto,13
+848,Felino,Hembra,Nieve,Vencido,1
+849,Canino,Hembra,Mora,Incompleto,2
+850,Canino,Macho,Chispa,Vencido,18
+851,Felino,Hembra,Reina,Al dia,2
+852,Canino,Hembra,Fiona,Al dia,6
+853,Felino,Hembra,Honey,Incompleto,19
+854,Canino,Macho,Simon,Al dia,9
+855,Canino,Hembra,Lupe,Incompleto,15
+856,Felino,Macho,Junior,Al dia,13
+857,Felino,Hembra,Luna,Incompleto,8
+858,Canino,Hembra,Fiona,Vencido,2
+859,Canino,Hembra,Sasha,Vencido,17
+860,Canino,Macho,Hunter,Incompleto,17
+861,Felino,Macho,Bruno,Incompleto,6
+862,Felino,Macho,Ringo,Incompleto,6
+863,Felino,Hembra,Honey,Al dia,17
+864,Canino,Hembra,Mancha,Vencido,15
+865,Canino,Hembra,Moca,Vencido,2
+866,Canino,Macho,Rocky,Incompleto,10
+867,Felino,Macho,Chispa,Incompleto,14
+868,Canino,Macho,Ringo,Incompleto,5
+869,Felino,Macho,Ringo,Incompleto,8
+870,Felino,Hembra,Mancha,Al dia,5
+871,Felino,Macho,Bruno,Vencido,20
+872,Felino,Hembra,Lupe,Al dia,10
+873,Felino,Hembra,Luna,Al dia,10
+874,Felino,Macho,Pompy,Incompleto,10
+875,Felino,Macho,Ringo,Incompleto,4
+876,Canino,Macho,Ringo,Vencido,9
+877,Canino,Macho,Junior,Vencido,5
+878,Canino,Hembra,Reina,Incompleto,2
+879,Canino,Hembra,Luna,Incompleto,20
+880,Felino,Macho,Zeus,Al dia,16
+881,Felino,Macho,Thor,Al dia,19
+882,Felino,Hembra,Delfina,Incompleto,9
+883,Canino,Macho,Toto,Al dia,1
+884,Felino,Hembra,Mancha,Incompleto,14
+885,Canino,Hembra,Honey,Incompleto,16
+886,Felino,Macho,Bruno,Vencido,3
+887,Canino,Macho,Thor,Incompleto,8
+888,Canino,Macho,Junior,Vencido,13
+889,Felino,Macho,Rocky,Vencido,9
+890,Felino,Macho,Simba,Vencido,4
+891,Canino,Macho,Chispa,Vencido,1
+892,Canino,Macho,Thor,Incompleto,2
+893,Felino,Macho,Chispa,Incompleto,13
+894,Canino,Macho,Rocky,Al dia,9
+895,Canino,Hembra,Luna,Al dia,5
+896,Canino,Macho,Rocky,Incompleto,8
+897,Canino,Hembra,Reina,Al dia,5
+898,Canino,Hembra,Honey,Vencido,17
+899,Felino,Hembra,Reina,Incompleto,7
+900,Felino,Macho,Zeus,Incompleto,16
+901,Felino,Macho,Chispa,Vencido,20
+902,Canino,Macho,Mancha,Al dia,9
+903,Felino,Macho,Thor,Al dia,3
+904,Canino,Hembra,Reina,Vencido,1
+905,Canino,Macho,Rocky,Incompleto,16
+906,Canino,Macho,Toto,Incompleto,15
+907,Canino,Hembra,Lola,Al dia,1
+908,Felino,Hembra,Sasha,Vencido,11
+909,Felino,Macho,Ringo,Al dia,3
+910,Canino,Macho,Ringo,Vencido,20
+911,Felino,Macho,Hunter,Al dia,19
+912,Canino,Macho,Bruno,Al dia,13
+913,Canino,Macho,Bruno,Vencido,1
+914,Felino,Hembra,Mora,Al dia,15
+915,Felino,Macho,Otto,Al dia,18
+916,Felino,Hembra,Honey,Vencido,9
+917,Canino,Macho,Rocky,Vencido,3
+918,Canino,Macho,Pompy,Vencido,20
+919,Felino,Hembra,Moca,Vencido,2
+920,Canino,Hembra,Sasha,Incompleto,19
+921,Canino,Hembra,Sasha,Al dia,1
+922,Felino,Macho,Hunter,Vencido,8
+923,Canino,Hembra,Mora,Incompleto,12
+924,Canino,Hembra,Sasha,Vencido,7
+925,Canino,Hembra,Mora,Incompleto,8
+926,Canino,Hembra,Sasha,Al dia,16
+927,Felino,Macho,Chispa,Incompleto,19
+928,Felino,Macho,Ringo,Vencido,3
+929,Felino,Macho,Otto,Incompleto,13
+930,Canino,Hembra,Honey,Incompleto,12
+931,Canino,Hembra,Reina,Vencido,7
+932,Canino,Macho,Zeus,Al dia,18
+933,Canino,Macho,Ringo,Incompleto,17
+934,Felino,Hembra,Moca,Al dia,5
+935,Felino,Hembra,Trufa,Al dia,8
+936,Felino,Macho,Bruno,Vencido,10
+937,Felino,Macho,Thor,Incompleto,20
+938,Canino,Hembra,Sasha,Al dia,5
+939,Felino,Macho,Chispa,Incompleto,1
+940,Canino,Hembra,Delfina,Al dia,6
+941,Canino,Hembra,Honey,Al dia,13
+942,Canino,Macho,Junior,Vencido,5
+943,Felino,Hembra,Nieve,Incompleto,12
+944,Canino,Hembra,Trufa,Incompleto,9
+945,Canino,Macho,Toto,Vencido,16
+946,Felino,Macho,Bruno,Incompleto,13
+947,Felino,Macho,Hunter,Al dia,3
+948,Felino,Hembra,Mora,Vencido,2
+949,Canino,Hembra,Moca,Incompleto,16
+950,Canino,Hembra,Lola,Vencido,13
+951,Felino,Macho,Toto,Al dia,18
+952,Canino,Hembra,Nieve,Incompleto,11
+953,Canino,Hembra,Mora,Vencido,5
+954,Felino,Hembra,Honey,Al dia,16
+955,Canino,Hembra,Luna,Vencido,3
+956,Canino,Hembra,Sasha,Incompleto,1
+957,Canino,Hembra,Trufa,Al dia,7
+958,Felino,Hembra,Delfina,Vencido,20
+959,Felino,Hembra,Lola,Vencido,5
+960,Felino,Macho,Hunter,Vencido,8
+961,Felino,Hembra,Moca,Incompleto,8
+962,Canino,Hembra,Sasha,Vencido,3
+963,Felino,Macho,Toto,Vencido,6
+964,Canino,Hembra,Trufa,Al dia,9
+965,Canino,Macho,Hunter,Al dia,14
+966,Felino,Macho,Hunter,Incompleto,4
+967,Felino,Macho,Simon,Al dia,7
+968,Canino,Macho,Toto,Incompleto,10
+969,Canino,Macho,Otto,Al dia,7
+970,Felino,Hembra,Trufa,Al dia,17
+971,Canino,Macho,Zeus,Incompleto,15
+972,Felino,Hembra,Trufa,Al dia,14
+973,Felino,Hembra,Mora,Al dia,7
+974,Felino,Macho,Pompy,Vencido,6
+975,Canino,Macho,Mancha,Incompleto,13
+976,Felino,Hembra,Nieve,Incompleto,14
+977,Canino,Hembra,Trufa,Al dia,5
+978,Canino,Hembra,Mancha,Al dia,7
+979,Felino,Macho,Bruno,Vencido,18
+980,Felino,Macho,Zeus,Incompleto,13
+981,Canino,Macho,Pompy,Incompleto,1
+982,Felino,Macho,Toto,Vencido,6
+983,Felino,Macho,Thor,Al dia,2
+984,Canino,Hembra,Trufa,Vencido,2
+985,Canino,Macho,Otto,Vencido,12
+986,Canino,Hembra,Trufa,Al dia,7
+987,Felino,Macho,Simon,Vencido,8
+988,Felino,Hembra,Fiona,Al dia,9
+989,Canino,Hembra,Nieve,Incompleto,13
+990,Felino,Hembra,Mancha,Al dia,13
+991,Felino,Hembra,Fiona,Vencido,6
+992,Felino,Hembra,Nieve,Incompleto,2
+993,Canino,Hembra,Luna,Incompleto,5
+994,Canino,Macho,Toto,Vencido,17
+995,Felino,Hembra,Honey,Al dia,2
+996,Felino,Macho,Thor,Incompleto,1
+997,Canino,Hembra,Reina,Incompleto,13
+998,Canino,Hembra,Delfina,Incompleto,4
+999,Canino,Hembra,Luna,Incompleto,10
+1000,Felino,Hembra,Luna,Vencido,1
