@@ -10,28 +10,20 @@
 #define MAX_NOMBRE 128
 
 
-Passenger* passenger_new()
+Passenger* Passenger_new()
 {
-	Passenger* this = (Passenger*) malloc(sizeof(Passenger));
-
-    if(this != NULL)
-    {
-        this->id = 0;
-        strcpy(this->nombre,"");
-        strcpy(this->apellido,"");
-        this->precio=0;
-        strcpy(this->codigoVuelo,"");
-        strcpy(this->tipoPasajero,"");
-        strcpy(this->estadoVuelo,"");
-    }
-
-    return this;
+	Passenger* auxPassenger=(Passenger*) malloc(sizeof(Passenger));
+	if (auxPassenger==NULL){
+		printf("No hay espacio en la memoria dinamica.\n");
+		exit(1);
+	}
+	return auxPassenger;
 }
 
 Passenger* passenger_newParametros(char* idStr, char* nombreStr, char* apellidoStr, char* precioStr, char* codigoVueloStr,
 char* tipoPasajeroStr, char* estadoVueloStr)
 {
-	Passenger* this = passenger_new();
+	Passenger* this = Passenger_new();
     if(idStr != NULL && nombreStr != NULL && apellidoStr != NULL && codigoVueloStr != NULL && tipoPasajeroStr != NULL && estadoVueloStr != NULL)
     {
         if(this != NULL)
@@ -39,9 +31,9 @@ char* tipoPasajeroStr, char* estadoVueloStr)
         	passenger_setId(this, atoi(idStr));
         	passenger_setNombre(this, nombreStr);
         	passenger_setApellido(this, apellidoStr);
+        	passenger_setPrecio(this, atoi(precioStr));
         	passenger_setCodigoVuelo(this, codigoVueloStr);;
         	passenger_setTipoPasajero(this, tipoPasajeroStr);
-        	passenger_setPrecio(this, atoi(precioStr));
         	passenger_setEstadoVuelo(this, estadoVueloStr);
         }
     }
@@ -70,11 +62,11 @@ int passenger_setId(Passenger* this,int id)
 
 int passenger_getId(Passenger* this,int* id)
 {
-	int retorno = -1;
-	if(this != NULL && id != NULL)
+	int retorno=-1;
+	if(this!=NULL && id!=NULL)
 	{
-		retorno = 0;
-		*id = this->id;
+		*id=this->id;
+		retorno=0;
 	}
 	return retorno;
 }
@@ -93,11 +85,11 @@ int passenger_setNombre(Passenger* this,char* nombre)
 
 int passenger_getNombre(Passenger* this,char* nombre)
 {
-	int retorno = -1;
-	if(this != NULL && nombre != NULL)
+	int retorno=-1;
+	if(this!=NULL && nombre!=NULL)
 	{
-		retorno = 0;
-		strncpy(nombre,this->nombre,MAX_NOMBRE);
+		strcpy(nombre,this->nombre);
+		retorno=0;
 	}
 	return retorno;
 }
@@ -114,11 +106,11 @@ int passenger_setApellido(Passenger* this,char* apellido)
 
 int passenger_getApellido(Passenger* this,char* apellido)
 {
-	int retorno = -1;
-	if(this != NULL && apellido != NULL)
+	int retorno=-1;
+	if(this!=NULL && apellido!=NULL)
 	{
-		retorno = 0;
-		strncpy(apellido,this->apellido,MAX_NOMBRE);
+		strcpy(apellido,this->apellido);
+		retorno=0;
 	}
 	return retorno;
 }
@@ -136,11 +128,11 @@ int passenger_setTipoPasajero(Passenger* this,char* tipoPasajero)
 
 int passenger_getTipoPasajero(Passenger* this,char* tipoPasajero)
 {
-	int retorno = -1;
-	if(this != NULL && tipoPasajero != NULL)
+	int retorno=-1;
+	if(this!=NULL && tipoPasajero!=NULL)
 	{
-		retorno = 0;
-		strncpy(tipoPasajero,this->tipoPasajero,MAX_NOMBRE);
+		strcpy(tipoPasajero,this->tipoPasajero);
+		retorno=0;
 	}
 	return retorno;
 }
@@ -157,11 +149,11 @@ int passenger_setCodigoVuelo(Passenger* this,char* codigoVuelo)
 
 int passenger_getCodigoVuelo(Passenger* this,char* codigoVuelo)
 {
-	int retorno = -1;
-	if(this != NULL && codigoVuelo != NULL)
+	int retorno=-1;
+	if(this!=NULL && codigoVuelo!=NULL)
 	{
-		retorno = 0;
-		strncpy(codigoVuelo,this->codigoVuelo,MAX_NOMBRE);
+		strcpy(codigoVuelo,this->codigoVuelo);
+		retorno=0;
 	}
 	return retorno;
 }
@@ -179,11 +171,11 @@ int passenger_setPrecio(Passenger* this,float precio)
 
 int passenger_getPrecio(Passenger* this,float* precio)
 {
-	int retorno = -1;
-	if(this != NULL && precio != NULL)
+	int retorno=-1;
+	if(this!=NULL && precio!=NULL)
 	{
-		retorno = 0;
-		*precio = this->precio;
+		*precio=this->precio;
+		retorno=0;
 	}
 	return retorno;
 }
@@ -201,11 +193,11 @@ int passenger_setEstadoVuelo(Passenger* this,char* estadoVuelo)
 
 int passenger_getEstadoVuelo(Passenger* this,char* estadoVuelo)
 {
-	int retorno = -1;
-	if(this != NULL && estadoVuelo != NULL)
+	int retorno=-1;
+	if(this!=NULL && estadoVuelo!=NULL)
 	{
-		retorno = 0;
-		strncpy(estadoVuelo,this->estadoVuelo,MAX_NOMBRE);
+		strcpy(estadoVuelo,this->estadoVuelo);
+		retorno=0;
 	}
 	return retorno;
 }

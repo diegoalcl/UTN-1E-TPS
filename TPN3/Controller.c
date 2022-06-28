@@ -76,7 +76,7 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListPassenger)
  * \return int
  *
  */
-int controller_addPassenger(LinkedList* pArrayListPassenger, int* id)
+int controller_addPassenger(LinkedList* pArrayListPassenger)
 {
 	 int retorno = 1;
 	 char nombre[4096];
@@ -89,16 +89,18 @@ int controller_addPassenger(LinkedList* pArrayListPassenger, int* id)
 	 int proximoID;
 	 char confirmacion;
 	 char opcion_continuar;
+	 int id=controller_getMaxId(pArrayListPassenger);
+	 id++;
 
 	 if(pArrayListPassenger != NULL)
-	 	 {
+		 {
 		 do
 		 {
 			 Passenger* nuevo_Pasajero;
 
-			 sprintf(idPasajero, "%d", *id);
+			 sprintf(idPasajero, "%d", id);
 			 pedirDatosPasajero(nombre, apellido, tipoPasajero, codigoVuelo, precio, estadoVuelo);
-			 nuevo_Pasajero = passenger_newParametros(idPasajero, nombre, apellido, tipoPasajero, codigoVuelo, precio, estadoVuelo);
+			 nuevo_Pasajero = passenger_newParametros(idPasajero, nombre, apellido, precio, codigoVuelo, tipoPasajero, estadoVuelo);
 			 printf("\n");
 
 			 printf("Estos son los datos ingresados:\n");//muestro el pasajero a cargar
@@ -111,21 +113,51 @@ int controller_addPassenger(LinkedList* pArrayListPassenger, int* id)
 			 {
 				 retorno = ll_add(pArrayListPassenger, nuevo_Pasajero);
 			 }
-	         else if(confirmacion == 'n'){
-	                retorno = 2;
-	            }
-	            printf("\n");
+			 else if(confirmacion == 'n'){
+					retorno = 2;
+				}
+				printf("\n");
 
-	      proximoID = *id;
-	      proximoID++;
-	      *id = proximoID;
+		  proximoID = id;
+		  proximoID++;
+		  id = proximoID;
 
-	     opcion_continuar = getYesOrNo("Desea ingresar otro empleado? Ingrese s para SI o n para NO: ");
-	     printf("\n");
-	     }
-	     while(opcion_continuar == 's');
-	    }
+		 opcion_continuar = getYesOrNo("Desea ingresar otro pasajero? Ingrese s para SI o n para NO: ");
+		 printf("\n");
+		 }
+		 while(opcion_continuar == 's');
+		}
 	 return retorno;
+}
+
+/** \brief Busca Id Maximo
+ *
+ * \param path char*
+ * \param pArrayListEmployee LinkedList*
+ * \return int
+ *
+ */
+int controller_getMaxId(LinkedList* pArrayListPassenger)
+{
+	int retorno=-1;
+	int cantidadLinkedList;
+	int id;
+
+	Passenger* pAuxPassenger=NULL;
+	if(pArrayListPassenger!=NULL && ll_isEmpty(pArrayListPassenger)==0)
+	{
+		cantidadLinkedList=ll_len(pArrayListPassenger);
+		for(int i=0; i<cantidadLinkedList ; i++)
+		{
+			pAuxPassenger = (Passenger*)ll_get(pArrayListPassenger, i);
+			passenger_getId(pAuxPassenger, &id);
+			if(id>retorno)
+			{
+				retorno=id;
+			}
+		}
+	}
+	return retorno;
 }
 
 /** \brief Modificar datos de pasajero
@@ -454,7 +486,7 @@ int controller_saveAsText(char* path , LinkedList* pArrayListPassenger)
     char nombreStr[51];
     char apellidoStr[51];
     char tipoPasajeroStr[51];
-    char codigoVueloStr[4];
+    char codigoVueloStr[51];
     float precioStr;
 
     if(pArrayListPassenger != NULL && path != NULL)
@@ -493,29 +525,21 @@ int controller_saveAsText(char* path , LinkedList* pArrayListPassenger)
  */
 int controller_saveAsBinary(char* path , LinkedList* pArrayListPassenger)
 {
-    int retorno = -1;
+    int retorno=-1;
     int len;
-    int i;
-    FILE* pFile;
-    Passenger* auxPassenger = NULL;
-
-    if(pArrayListPassenger != NULL && path != NULL)
-    {
-        pFile = fopen(path, "wb");//abro el archivo en modo escritura
-        len = ll_len(pArrayListPassenger);
-
-        if(pFile!=NULL)
-        {
-            for(i=0; i<len; i++)
-            {
-                auxPassenger = (Passenger*) ll_get(pArrayListPassenger, i);
-                fwrite(auxPassenger, sizeof(Passenger), 1, pFile);
-            }
-        }
-        fclose(pFile);
-        retorno = 0;
+    Passenger* aux=NULL;
+    if(pArrayListPassenger!=NULL&& path!=NULL){
+    	FILE* pFile= fopen(path,"wb");
+		len=ll_len(pArrayListPassenger);
+		if(pFile!=NULL){
+			for(int i =0; i<len; i++){
+				aux=(Passenger*)ll_get(pArrayListPassenger, i);
+				fwrite(aux, sizeof(Passenger), 1,pFile);
+			}
+			retorno=0;
+		}
+		fclose(pFile);
     }
-
     return retorno;
 }
 

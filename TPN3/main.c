@@ -28,7 +28,7 @@ int main(void)
 	setbuf(stdout, NULL);
 
     int option = 0;
-    int id =0;
+    //int id =0;
     int casosPosiblesDeRetorno=0;
     int banderaAlgoParaGuardar=0;
 
@@ -61,7 +61,7 @@ int main(void)
 	            printf("\n");
                 break;
             case 2:
-                casosPosiblesDeRetorno=controller_loadFromBinary("data.csv", listaPasajeros);
+                casosPosiblesDeRetorno=controller_loadFromBinary("data.bin", listaPasajeros);
                 switch(casosPosiblesDeRetorno)
                 {
                 case -1:
@@ -81,7 +81,7 @@ int main(void)
                 printf("\n");
                 break;
             case 3:
-            	casosPosiblesDeRetorno=controller_addPassenger(listaPasajeros, &id);
+            	casosPosiblesDeRetorno=controller_addPassenger(listaPasajeros);
                 switch(casosPosiblesDeRetorno)
                 {
                 case -1:
@@ -177,7 +177,7 @@ int main(void)
                     printf("Error: no se pudo acceder al ordenamiento de pasajeros.\n");
                     break;
                 case 2:
-                    printf("No se han agregado pasajeros a la lista.\n");
+                    printf("Error: No se han agregado pasajeros a la lista.\n");
                     break;
                 case 3:
                     printf("Se ha salido del submenu de ordenamiento.\n");
